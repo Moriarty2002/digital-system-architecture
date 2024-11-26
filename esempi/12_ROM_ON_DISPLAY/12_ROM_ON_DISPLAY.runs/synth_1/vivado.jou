@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2020.1 (64-bit)
+# SW Build 2902540 on Wed May 27 19:54:49 MDT 2020
+# IP Build 2902112 on Wed May 27 22:43:36 MDT 2020
+# Start of session at: Tue Oct 31 11:34:28 2023
+# Process ID: 15256
+# Current directory: C:/VIVADO-PROJECTS/12_ROM_ON_DISPLAY/12_ROM_ON_DISPLAY.runs/synth_1
+# Command line: vivado.exe -log ROM_selector_onboard.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source ROM_selector_onboard.tcl
+# Log file: C:/VIVADO-PROJECTS/12_ROM_ON_DISPLAY/12_ROM_ON_DISPLAY.runs/synth_1/ROM_selector_onboard.vds
+# Journal file: C:/VIVADO-PROJECTS/12_ROM_ON_DISPLAY/12_ROM_ON_DISPLAY.runs/synth_1\vivado.jou
+#-----------------------------------------------------------
+source ROM_selector_onboard.tcl -notrace

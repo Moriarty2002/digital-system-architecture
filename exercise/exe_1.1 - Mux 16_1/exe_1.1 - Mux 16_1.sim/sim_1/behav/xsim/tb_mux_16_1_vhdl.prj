@@ -1,0 +1,9 @@
+# compile vhdl design source files
+vhdl xil_defaultlib  \
+"../../../../../first_examples/first_examples.srcs/sources_1/new/mux_2_1.vhd" \
+"../../../../../first_examples/first_examples.srcs/sources_1/new/mux_4_1.vhd" \
+"../../../../exe_1.1 - Mux 16_1.srcs/sources_1/new/mux_16_1.vhd" \
+"../../../../exe_1.1 - Mux 16_1.srcs/sim_1/new/tb_mux_16_1.vhd" \
+
+# Do not sort compile order
+nosort

@@ -1,0 +1,11 @@
+# compile vhdl design source files
+vhdl xil_defaultlib  \
+"../../../../exe 1.2 - Rete inteconnessione 16_4.srcs/sources_1/imports/VHDL/VIVADO-PROJECTS/demux_1_4/demux_1_4.srcs/sources_1/new/demux_1_4.vhd" \
+"../../../../exe 1.2 - Rete inteconnessione 16_4.srcs/sources_1/imports/VHDL/exercise/first_examples/first_examples.srcs/sources_1/new/mux_2_1.vhd" \
+"../../../../exe 1.2 - Rete inteconnessione 16_4.srcs/sources_1/imports/VHDL/exercise/first_examples/first_examples.srcs/sources_1/new/mux_4_1.vhd" \
+"../../../../exe 1.2 - Rete inteconnessione 16_4.srcs/sources_1/imports/VHDL/exercise/exe_1.1 - Mux 16_1/exe_1.1 - Mux 16_1.srcs/sources_1/new/mux_16_1.vhd" \
+"../../../../exe 1.2 - Rete inteconnessione 16_4.srcs/sources_1/new/interconnection_16_4.vhd" \
+"../../../../exe 1.2 - Rete inteconnessione 16_4.srcs/sim_1/new/interconnection_16_4_TB.vhd" \
+
+# Do not sort compile order
+nosort

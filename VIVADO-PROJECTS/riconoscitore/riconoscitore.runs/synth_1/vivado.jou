@@ -1,0 +1,14 @@
+#-----------------------------------------------------------
+# Vivado v2023.1 (64-bit)
+# SW Build 3865809 on Sun May  7 15:05:29 MDT 2023
+# IP Build 3864474 on Sun May  7 20:36:21 MDT 2023
+# SharedData Build 3865790 on Sun May 07 13:33:03 MDT 2023
+# Start of session at: Thu Nov  7 22:08:58 2024
+# Process ID: 12312
+# Current directory: Z:/University/Architettura Sistemi Digitali/VHDL/VIVADO-PROJECTS/riconoscitore/riconoscitore.runs/synth_1
+# Command line: vivado.exe -log riconoscitore_101.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source riconoscitore_101.tcl
+# Log file: Z:/University/Architettura Sistemi Digitali/VHDL/VIVADO-PROJECTS/riconoscitore/riconoscitore.runs/synth_1/riconoscitore_101.vds
+# Journal file: Z:/University/Architettura Sistemi Digitali/VHDL/VIVADO-PROJECTS/riconoscitore/riconoscitore.runs/synth_1\vivado.jou
+# Running On: Ryzen, OS: Windows, CPU Frequency: 1797 MHz, CPU Physical cores: 16, Host memory: 6280 MB
+#-----------------------------------------------------------
+source riconoscitore_101.tcl -notrace

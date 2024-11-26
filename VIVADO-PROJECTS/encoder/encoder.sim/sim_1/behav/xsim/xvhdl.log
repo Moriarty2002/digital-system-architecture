@@ -1,0 +1,4 @@
+INFO: [VRFC 10-163] Analyzing VHDL file "Z:/University/Architettura Sistemi Digitali/VHDL/VIVADO-PROJECTS/encoder/encoder.srcs/sources_1/new/encoder_8_4.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'encoder_8_4'
+INFO: [VRFC 10-163] Analyzing VHDL file "Z:/University/Architettura Sistemi Digitali/VHDL/VIVADO-PROJECTS/encoder/encoder.srcs/sim_1/new/encoder_8_4_TB.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'tb_encoder_8_4'

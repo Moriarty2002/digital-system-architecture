@@ -1,0 +1,278 @@
+
+*** Running vivado
+    with args -log ROM_selector_onboard.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source ROM_selector_onboard.tcl
+
+
+
+****** Vivado v2020.1 (64-bit)
+  **** SW Build 2902540 on Wed May 27 19:54:49 MDT 2020
+  **** IP Build 2902112 on Wed May 27 22:43:36 MDT 2020
+    ** Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+
+source ROM_selector_onboard.tcl -notrace
+Command: synth_design -top ROM_selector_onboard -part xc7a100tcsg324-1
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a100t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a100t'
+INFO: [Device 21-403] Loading part xc7a100tcsg324-1
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 2 processes.
+INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
+INFO: [Synth 8-7075] Helper process launched with PID 9188
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:02 ; elapsed = 00:00:04 . Memory (MB): peak = 1032.195 ; gain = 0.000
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'ROM_selector_onboard' [C:/VIVADO-PROJECTS/12_ROM_ON_DISPLAY/12_ROM_ON_DISPLAY.srcs/sources_1/imports/sources_1/new/ROMSelector_onboard.vhd:35]
+	Parameter CLK_period bound to: 10 - type: integer 
+	Parameter btn_noise_time bound to: 10000000 - type: integer 
+INFO: [Synth 8-3491] module 'ButtonDebouncer' declared at 'C:/VIVADO-PROJECTS/12_ROM_ON_DISPLAY/12_ROM_ON_DISPLAY.srcs/sources_1/imports/sources_1/new/ButtonDebouncer.vhd:34' bound to instance 'debouncer' of component 'ButtonDebouncer' [C:/VIVADO-PROJECTS/12_ROM_ON_DISPLAY/12_ROM_ON_DISPLAY.srcs/sources_1/imports/sources_1/new/ROMSelector_onboard.vhd:96]
+INFO: [Synth 8-638] synthesizing module 'ButtonDebouncer' [C:/VIVADO-PROJECTS/12_ROM_ON_DISPLAY/12_ROM_ON_DISPLAY.srcs/sources_1/imports/sources_1/new/ButtonDebouncer.vhd:46]
+	Parameter CLK_period bound to: 10 - type: integer 
+	Parameter btn_noise_time bound to: 10000000 - type: integer 
+INFO: [Synth 8-226] default block is never used [C:/VIVADO-PROJECTS/12_ROM_ON_DISPLAY/12_ROM_ON_DISPLAY.srcs/sources_1/imports/sources_1/new/ButtonDebouncer.vhd:79]
+INFO: [Synth 8-256] done synthesizing module 'ButtonDebouncer' (1#1) [C:/VIVADO-PROJECTS/12_ROM_ON_DISPLAY/12_ROM_ON_DISPLAY.srcs/sources_1/imports/sources_1/new/ButtonDebouncer.vhd:46]
+INFO: [Synth 8-3491] module 'counter_mod8' declared at 'C:/VIVADO-PROJECTS/12_ROM_ON_DISPLAY/12_ROM_ON_DISPLAY.srcs/sources_1/imports/sources_1/imports/Display7Seg - Vivado/counter_mod8.vhd:34' bound to instance 'counter' of component 'counter_mod8' [C:/VIVADO-PROJECTS/12_ROM_ON_DISPLAY/12_ROM_ON_DISPLAY.srcs/sources_1/imports/sources_1/new/ROMSelector_onboard.vhd:107]
+INFO: [Synth 8-638] synthesizing module 'counter_mod8' [C:/VIVADO-PROJECTS/12_ROM_ON_DISPLAY/12_ROM_ON_DISPLAY.srcs/sources_1/imports/sources_1/imports/Display7Seg - Vivado/counter_mod8.vhd:41]
+INFO: [Synth 8-256] done synthesizing module 'counter_mod8' (2#1) [C:/VIVADO-PROJECTS/12_ROM_ON_DISPLAY/12_ROM_ON_DISPLAY.srcs/sources_1/imports/sources_1/imports/Display7Seg - Vivado/counter_mod8.vhd:41]
+INFO: [Synth 8-3491] module 'ROM' declared at 'C:/VIVADO-PROJECTS/12_ROM_ON_DISPLAY/12_ROM_ON_DISPLAY.srcs/sources_1/imports/sources_1/new/ROM.vhd:7' bound to instance 'mem' of component 'ROM' [C:/VIVADO-PROJECTS/12_ROM_ON_DISPLAY/12_ROM_ON_DISPLAY.srcs/sources_1/imports/sources_1/new/ROMSelector_onboard.vhd:116]
+INFO: [Synth 8-638] synthesizing module 'ROM' [C:/VIVADO-PROJECTS/12_ROM_ON_DISPLAY/12_ROM_ON_DISPLAY.srcs/sources_1/imports/sources_1/new/ROM.vhd:17]
+WARNING: [Synth 8-614] signal 'RST' is read in the process but is not in the sensitivity list [C:/VIVADO-PROJECTS/12_ROM_ON_DISPLAY/12_ROM_ON_DISPLAY.srcs/sources_1/imports/sources_1/new/ROM.vhd:34]
+WARNING: [Synth 8-614] signal 'ROM' is read in the process but is not in the sensitivity list [C:/VIVADO-PROJECTS/12_ROM_ON_DISPLAY/12_ROM_ON_DISPLAY.srcs/sources_1/imports/sources_1/new/ROM.vhd:34]
+INFO: [Synth 8-256] done synthesizing module 'ROM' (3#1) [C:/VIVADO-PROJECTS/12_ROM_ON_DISPLAY/12_ROM_ON_DISPLAY.srcs/sources_1/imports/sources_1/new/ROM.vhd:17]
+	Parameter CLKIN_freq bound to: 100000000 - type: integer 
+	Parameter CLKOUT_freq bound to: 500 - type: integer 
+INFO: [Synth 8-3491] module 'display_seven_segments' declared at 'C:/VIVADO-PROJECTS/12_ROM_ON_DISPLAY/12_ROM_ON_DISPLAY.srcs/sources_1/imports/sources_1/imports/Display7Seg - Vivado/display_seven_segments.vhd:32' bound to instance 'seven_segment_array' of component 'display_seven_segments' [C:/VIVADO-PROJECTS/12_ROM_ON_DISPLAY/12_ROM_ON_DISPLAY.srcs/sources_1/imports/sources_1/new/ROMSelector_onboard.vhd:123]
+INFO: [Synth 8-638] synthesizing module 'display_seven_segments' [C:/VIVADO-PROJECTS/12_ROM_ON_DISPLAY/12_ROM_ON_DISPLAY.srcs/sources_1/imports/sources_1/imports/Display7Seg - Vivado/display_seven_segments.vhd:46]
+	Parameter CLKIN_freq bound to: 100000000 - type: integer 
+	Parameter CLKOUT_freq bound to: 500 - type: integer 
+	Parameter CLKIN_freq bound to: 100000000 - type: integer 
+	Parameter CLKOUT_freq bound to: 500 - type: integer 
+INFO: [Synth 8-3491] module 'clock_filter' declared at 'C:/VIVADO-PROJECTS/12_ROM_ON_DISPLAY/12_ROM_ON_DISPLAY.srcs/sources_1/imports/sources_1/imports/Display7Seg - Vivado/clock_filter.vhd:32' bound to instance 'clk_filter' of component 'clock_filter' [C:/VIVADO-PROJECTS/12_ROM_ON_DISPLAY/12_ROM_ON_DISPLAY.srcs/sources_1/imports/sources_1/imports/Display7Seg - Vivado/display_seven_segments.vhd:94]
+INFO: [Synth 8-638] synthesizing module 'clock_filter' [C:/VIVADO-PROJECTS/12_ROM_ON_DISPLAY/12_ROM_ON_DISPLAY.srcs/sources_1/imports/sources_1/imports/Display7Seg - Vivado/clock_filter.vhd:44]
+	Parameter CLKIN_freq bound to: 100000000 - type: integer 
+	Parameter CLKOUT_freq bound to: 500 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'clock_filter' (4#1) [C:/VIVADO-PROJECTS/12_ROM_ON_DISPLAY/12_ROM_ON_DISPLAY.srcs/sources_1/imports/sources_1/imports/Display7Seg - Vivado/clock_filter.vhd:44]
+INFO: [Synth 8-3491] module 'counter_mod8' declared at 'C:/VIVADO-PROJECTS/12_ROM_ON_DISPLAY/12_ROM_ON_DISPLAY.srcs/sources_1/imports/sources_1/imports/Display7Seg - Vivado/counter_mod8.vhd:34' bound to instance 'counter_instance' of component 'counter_mod8' [C:/VIVADO-PROJECTS/12_ROM_ON_DISPLAY/12_ROM_ON_DISPLAY.srcs/sources_1/imports/sources_1/imports/Display7Seg - Vivado/display_seven_segments.vhd:104]
+INFO: [Synth 8-3491] module 'cathodes_manager' declared at 'C:/VIVADO-PROJECTS/12_ROM_ON_DISPLAY/12_ROM_ON_DISPLAY.srcs/sources_1/imports/sources_1/imports/Display7Seg - Vivado/cathodes_manager.vhd:32' bound to instance 'cathodes_instance' of component 'cathodes_manager' [C:/VIVADO-PROJECTS/12_ROM_ON_DISPLAY/12_ROM_ON_DISPLAY.srcs/sources_1/imports/sources_1/imports/Display7Seg - Vivado/display_seven_segments.vhd:112]
+INFO: [Synth 8-638] synthesizing module 'cathodes_manager' [C:/VIVADO-PROJECTS/12_ROM_ON_DISPLAY/12_ROM_ON_DISPLAY.srcs/sources_1/imports/sources_1/imports/Display7Seg - Vivado/cathodes_manager.vhd:39]
+INFO: [Synth 8-226] default block is never used [C:/VIVADO-PROJECTS/12_ROM_ON_DISPLAY/12_ROM_ON_DISPLAY.srcs/sources_1/imports/sources_1/imports/Display7Seg - Vivado/cathodes_manager.vhd:78]
+WARNING: [Synth 8-614] signal 'value' is read in the process but is not in the sensitivity list [C:/VIVADO-PROJECTS/12_ROM_ON_DISPLAY/12_ROM_ON_DISPLAY.srcs/sources_1/imports/sources_1/imports/Display7Seg - Vivado/cathodes_manager.vhd:75]
+WARNING: [Synth 8-614] signal 'dots' is read in the process but is not in the sensitivity list [C:/VIVADO-PROJECTS/12_ROM_ON_DISPLAY/12_ROM_ON_DISPLAY.srcs/sources_1/imports/sources_1/imports/Display7Seg - Vivado/cathodes_manager.vhd:75]
+INFO: [Synth 8-226] default block is never used [C:/VIVADO-PROJECTS/12_ROM_ON_DISPLAY/12_ROM_ON_DISPLAY.srcs/sources_1/imports/sources_1/imports/Display7Seg - Vivado/cathodes_manager.vhd:111]
+INFO: [Synth 8-256] done synthesizing module 'cathodes_manager' (5#1) [C:/VIVADO-PROJECTS/12_ROM_ON_DISPLAY/12_ROM_ON_DISPLAY.srcs/sources_1/imports/sources_1/imports/Display7Seg - Vivado/cathodes_manager.vhd:39]
+INFO: [Synth 8-3491] module 'anodes_manager' declared at 'C:/VIVADO-PROJECTS/12_ROM_ON_DISPLAY/12_ROM_ON_DISPLAY.srcs/sources_1/imports/sources_1/imports/Display7Seg - Vivado/anodes_manager.vhd:32' bound to instance 'anodes_instance' of component 'anodes_manager' [C:/VIVADO-PROJECTS/12_ROM_ON_DISPLAY/12_ROM_ON_DISPLAY.srcs/sources_1/imports/sources_1/imports/Display7Seg - Vivado/display_seven_segments.vhd:119]
+INFO: [Synth 8-638] synthesizing module 'anodes_manager' [C:/VIVADO-PROJECTS/12_ROM_ON_DISPLAY/12_ROM_ON_DISPLAY.srcs/sources_1/imports/sources_1/imports/Display7Seg - Vivado/anodes_manager.vhd:39]
+INFO: [Synth 8-226] default block is never used [C:/VIVADO-PROJECTS/12_ROM_ON_DISPLAY/12_ROM_ON_DISPLAY.srcs/sources_1/imports/sources_1/imports/Display7Seg - Vivado/anodes_manager.vhd:51]
+INFO: [Synth 8-256] done synthesizing module 'anodes_manager' (6#1) [C:/VIVADO-PROJECTS/12_ROM_ON_DISPLAY/12_ROM_ON_DISPLAY.srcs/sources_1/imports/sources_1/imports/Display7Seg - Vivado/anodes_manager.vhd:39]
+INFO: [Synth 8-256] done synthesizing module 'display_seven_segments' (7#1) [C:/VIVADO-PROJECTS/12_ROM_ON_DISPLAY/12_ROM_ON_DISPLAY.srcs/sources_1/imports/sources_1/imports/Display7Seg - Vivado/display_seven_segments.vhd:46]
+INFO: [Synth 8-256] done synthesizing module 'ROM_selector_onboard' (8#1) [C:/VIVADO-PROJECTS/12_ROM_ON_DISPLAY/12_ROM_ON_DISPLAY.srcs/sources_1/imports/sources_1/new/ROMSelector_onboard.vhd:35]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:02 ; elapsed = 00:00:05 . Memory (MB): peak = 1032.195 ; gain = 0.000
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:02 ; elapsed = 00:00:05 . Memory (MB): peak = 1032.195 ; gain = 0.000
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:02 ; elapsed = 00:00:05 . Memory (MB): peak = 1032.195 ; gain = 0.000
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.002 . Memory (MB): peak = 1032.195 ; gain = 0.000
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [C:/VIVADO-PROJECTS/12_ROM_ON_DISPLAY/12_ROM_ON_DISPLAY.srcs/constrs_1/imports/digilent-xdc-master/Nexys-A7-50T-Master.xdc]
+Finished Parsing XDC File [C:/VIVADO-PROJECTS/12_ROM_ON_DISPLAY/12_ROM_ON_DISPLAY.srcs/constrs_1/imports/digilent-xdc-master/Nexys-A7-50T-Master.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [C:/VIVADO-PROJECTS/12_ROM_ON_DISPLAY/12_ROM_ON_DISPLAY.srcs/constrs_1/imports/digilent-xdc-master/Nexys-A7-50T-Master.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/ROM_selector_onboard_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/ROM_selector_onboard_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1032.195 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.003 . Memory (MB): peak = 1032.195 ; gain = 0.000
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:04 ; elapsed = 00:00:10 . Memory (MB): peak = 1032.195 ; gain = 0.000
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7a100tcsg324-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:04 ; elapsed = 00:00:10 . Memory (MB): peak = 1032.195 ; gain = 0.000
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:04 ; elapsed = 00:00:10 . Memory (MB): peak = 1032.195 ; gain = 0.000
+---------------------------------------------------------------------------------
+INFO: [Synth 8-802] inferred FSM for state register 'BTN_state_reg' in module 'ButtonDebouncer'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+             not_pressed |                               00 |                               00
+             chk_pressed |                               01 |                               01
+                 pressed |                               10 |                               10
+         chk_not_pressed |                               11 |                               11
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'BTN_state_reg' using encoding 'sequential' in module 'ButtonDebouncer'
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:05 ; elapsed = 00:00:10 . Memory (MB): peak = 1032.195 ; gain = 0.000
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input   32 Bit       Adders := 1     
+	   2 Input   18 Bit       Adders := 1     
+	   2 Input    3 Bit       Adders := 2     
++---Registers : 
+	               32 Bit    Registers := 1     
+	               18 Bit    Registers := 1     
+	                3 Bit    Registers := 2     
+	                1 Bit    Registers := 2     
++---Muxes : 
+	   2 Input   32 Bit        Muxes := 1     
+	   9 Input   32 Bit        Muxes := 1     
+	   2 Input   18 Bit        Muxes := 1     
+	   8 Input    8 Bit        Muxes := 1     
+	   4 Input    2 Bit        Muxes := 1     
+	   2 Input    2 Bit        Muxes := 6     
+	   4 Input    1 Bit        Muxes := 2     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 240 (col length:80)
+BRAMs: 270 (col length: RAMB18 80 RAMB36 40)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:05 ; elapsed = 00:00:12 . Memory (MB): peak = 1032.195 ; gain = 0.000
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:08 ; elapsed = 00:00:18 . Memory (MB): peak = 1032.195 ; gain = 0.000
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:08 ; elapsed = 00:00:18 . Memory (MB): peak = 1042.887 ; gain = 10.691
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:08 ; elapsed = 00:00:18 . Memory (MB): peak = 1044.367 ; gain = 12.172
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:10 ; elapsed = 00:00:21 . Memory (MB): peak = 1049.172 ; gain = 16.977
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:10 ; elapsed = 00:00:21 . Memory (MB): peak = 1049.172 ; gain = 16.977
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:10 ; elapsed = 00:00:21 . Memory (MB): peak = 1049.172 ; gain = 16.977
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:10 ; elapsed = 00:00:21 . Memory (MB): peak = 1049.172 ; gain = 16.977
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:10 ; elapsed = 00:00:21 . Memory (MB): peak = 1049.172 ; gain = 16.977
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:10 ; elapsed = 00:00:21 . Memory (MB): peak = 1049.172 ; gain = 16.977
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+-------+------+
+|      |Cell   |Count |
++------+-------+------+
+|1     |BUFG   |     1|
+|2     |CARRY4 |    13|
+|3     |LUT1   |     2|
+|4     |LUT2   |     4|
+|5     |LUT3   |    12|
+|6     |LUT4   |    22|
+|7     |LUT5   |    22|
+|8     |LUT6   |     9|
+|9     |FDRE   |    60|
+|10    |IBUF   |     3|
+|11    |OBUF   |    16|
++------+-------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:10 ; elapsed = 00:00:21 . Memory (MB): peak = 1049.172 ; gain = 16.977
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 0 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:07 ; elapsed = 00:00:20 . Memory (MB): peak = 1049.172 ; gain = 16.977
+Synthesis Optimization Complete : Time (s): cpu = 00:00:10 ; elapsed = 00:00:22 . Memory (MB): peak = 1049.172 ; gain = 16.977
+INFO: [Project 1-571] Translating synthesized netlist
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.002 . Memory (MB): peak = 1049.172 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 13 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1056.516 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+INFO: [Common 17-83] Releasing license: Synthesis
+45 Infos, 4 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:12 ; elapsed = 00:00:27 . Memory (MB): peak = 1056.516 ; gain = 24.320
+INFO: [Common 17-1381] The checkpoint 'C:/VIVADO-PROJECTS/12_ROM_ON_DISPLAY/12_ROM_ON_DISPLAY.runs/synth_1/ROM_selector_onboard.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file ROM_selector_onboard_utilization_synth.rpt -pb ROM_selector_onboard_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Tue Oct 31 11:34:57 2023...

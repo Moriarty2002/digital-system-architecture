@@ -1,0 +1,14 @@
+#-----------------------------------------------------------
+# Vivado v2023.1 (64-bit)
+# SW Build 3865809 on Sun May  7 15:05:29 MDT 2023
+# IP Build 3864474 on Sun May  7 20:36:21 MDT 2023
+# SharedData Build 3865790 on Sun May 07 13:33:03 MDT 2023
+# Start of session at: Tue Nov 19 18:55:16 2024
+# Process ID: 12960
+# Current directory: Z:/University/Architettura Sistemi Digitali/VHDL/exercise/exe 4.1/exe 4.1.runs/impl_1
+# Command line: vivado.exe -log shift_register.vdi -applog -product Vivado -messageDb vivado.pb -mode batch -source shift_register.tcl -notrace
+# Log file: Z:/University/Architettura Sistemi Digitali/VHDL/exercise/exe 4.1/exe 4.1.runs/impl_1/shift_register.vdi
+# Journal file: Z:/University/Architettura Sistemi Digitali/VHDL/exercise/exe 4.1/exe 4.1.runs/impl_1\vivado.jou
+# Running On: Ryzen, OS: Windows, CPU Frequency: 1797 MHz, CPU Physical cores: 16, Host memory: 6280 MB
+#-----------------------------------------------------------
+source shift_register.tcl -notrace

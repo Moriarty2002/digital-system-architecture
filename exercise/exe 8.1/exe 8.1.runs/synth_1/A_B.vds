@@ -1,0 +1,308 @@
+#-----------------------------------------------------------
+# Vivado v2023.1 (64-bit)
+# SW Build 3865809 on Sun May  7 15:05:29 MDT 2023
+# IP Build 3864474 on Sun May  7 20:36:21 MDT 2023
+# SharedData Build 3865790 on Sun May 07 13:33:03 MDT 2023
+# Start of session at: Mon Nov 25 15:51:12 2024
+# Process ID: 7732
+# Current directory: Z:/University/Architettura Sistemi Digitali/VHDL/exercise/exe 8.1/exe 8.1.runs/synth_1
+# Command line: vivado.exe -log A_B.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source A_B.tcl
+# Log file: Z:/University/Architettura Sistemi Digitali/VHDL/exercise/exe 8.1/exe 8.1.runs/synth_1/A_B.vds
+# Journal file: Z:/University/Architettura Sistemi Digitali/VHDL/exercise/exe 8.1/exe 8.1.runs/synth_1\vivado.jou
+# Running On: Ryzen, OS: Windows, CPU Frequency: 1797 MHz, CPU Physical cores: 16, Host memory: 6280 MB
+#-----------------------------------------------------------
+source A_B.tcl -notrace
+create_project: Time (s): cpu = 00:00:12 ; elapsed = 00:00:28 . Memory (MB): peak = 500.059 ; gain = 232.188
+Command: read_checkpoint -auto_incremental -incremental {Z:/University/Architettura Sistemi Digitali/VHDL/exercise/exe 8.1/exe 8.1.srcs/utils_1/imports/synth_1/A.dcp}
+INFO: [Vivado 12-5825] Read reference checkpoint from Z:/University/Architettura Sistemi Digitali/VHDL/exercise/exe 8.1/exe 8.1.srcs/utils_1/imports/synth_1/A.dcp for incremental synthesis
+INFO: [Vivado 12-7989] Please ensure there are no constraint changes
+Command: synth_design -top A_B -part xc7a100tcsg324-1
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a100t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a100t'
+INFO: [Device 21-403] Loading part xc7a100tcsg324-1
+INFO: [Designutils 20-5440] No compile time benefit to using incremental synthesis; A full resynthesis will be run
+INFO: [Designutils 20-4379] Flow is switching to default flow due to incremental criteria not met. If you would like to alter this behaviour and have the flow terminate instead, please set the following parameter config_implementation {autoIncr.Synth.RejectBehavior Terminate}
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 2 processes.
+INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
+INFO: [Synth 8-7075] Helper process launched with PID 3864
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:05 ; elapsed = 00:00:07 . Memory (MB): peak = 1330.977 ; gain = 413.402
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'A_B' [Z:/University/Architettura Sistemi Digitali/VHDL/exercise/exe 8.1/exe 8.1.srcs/sources_1/new/sys.vhd:14]
+INFO: [Synth 8-638] synthesizing module 'ButtonDebouncer' [Z:/University/Architettura Sistemi Digitali/VHDL/exercise/exe 8.1/exe 8.1.srcs/sources_1/imports/VHDL/exercise/exe 4.1/exe 4.1.srcs/sources_1/imports/new/ButtonDebouncer.vhd:46]
+	Parameter CLK_period bound to: 10 - type: integer 
+	Parameter btn_noise_time bound to: 10 - type: integer 
+INFO: [Synth 8-226] default block is never used [Z:/University/Architettura Sistemi Digitali/VHDL/exercise/exe 8.1/exe 8.1.srcs/sources_1/imports/VHDL/exercise/exe 4.1/exe 4.1.srcs/sources_1/imports/new/ButtonDebouncer.vhd:79]
+INFO: [Synth 8-256] done synthesizing module 'ButtonDebouncer' (0#1) [Z:/University/Architettura Sistemi Digitali/VHDL/exercise/exe 8.1/exe 8.1.srcs/sources_1/imports/VHDL/exercise/exe 4.1/exe 4.1.srcs/sources_1/imports/new/ButtonDebouncer.vhd:46]
+INFO: [Synth 8-638] synthesizing module 'A' [Z:/University/Architettura Sistemi Digitali/VHDL/exercise/exe 8.1/exe 8.1.srcs/sources_1/new/A.vhd:15]
+INFO: [Synth 8-638] synthesizing module 'decoder_4_16' [Z:/University/Architettura Sistemi Digitali/VHDL/exercise/exe 8.1/exe 8.1.srcs/sources_1/imports/new/decoder_4_16.vhd:12]
+INFO: [Synth 8-638] synthesizing module 'decoder_2_4' [Z:/University/Architettura Sistemi Digitali/VHDL/exercise/exe 8.1/exe 8.1.srcs/sources_1/imports/new/decoder_2_4.vhd:11]
+INFO: [Synth 8-256] done synthesizing module 'decoder_2_4' (0#1) [Z:/University/Architettura Sistemi Digitali/VHDL/exercise/exe 8.1/exe 8.1.srcs/sources_1/imports/new/decoder_2_4.vhd:11]
+INFO: [Synth 8-256] done synthesizing module 'decoder_4_16' (0#1) [Z:/University/Architettura Sistemi Digitali/VHDL/exercise/exe 8.1/exe 8.1.srcs/sources_1/imports/new/decoder_4_16.vhd:12]
+INFO: [Synth 8-638] synthesizing module 'rom_16x8_one_hot' [Z:/University/Architettura Sistemi Digitali/VHDL/exercise/exe 8.1/exe 8.1.srcs/sources_1/imports/VHDL/VIVADO-PROJECTS/ROM_16x8/ROM_16x8.srcs/sources_1/new/rom_16x8.vhd:13]
+WARNING: [Synth 8-614] signal 'read' is read in the process but is not in the sensitivity list [Z:/University/Architettura Sistemi Digitali/VHDL/exercise/exe 8.1/exe 8.1.srcs/sources_1/imports/VHDL/VIVADO-PROJECTS/ROM_16x8/ROM_16x8.srcs/sources_1/new/rom_16x8.vhd:15]
+INFO: [Synth 8-256] done synthesizing module 'rom_16x8_one_hot' (0#1) [Z:/University/Architettura Sistemi Digitali/VHDL/exercise/exe 8.1/exe 8.1.srcs/sources_1/imports/VHDL/VIVADO-PROJECTS/ROM_16x8/ROM_16x8.srcs/sources_1/new/rom_16x8.vhd:13]
+INFO: [Synth 8-638] synthesizing module 'Contatore' [Z:/University/Architettura Sistemi Digitali/VHDL/exercise/exe 8.1/exe 8.1.srcs/sources_1/imports/new/Contatore.vhd:20]
+	Parameter N bound to: 4 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'Contatore' (0#1) [Z:/University/Architettura Sistemi Digitali/VHDL/exercise/exe 8.1/exe 8.1.srcs/sources_1/imports/new/Contatore.vhd:20]
+WARNING: [Synth 8-614] signal 'state_c' is read in the process but is not in the sensitivity list [Z:/University/Architettura Sistemi Digitali/VHDL/exercise/exe 8.1/exe 8.1.srcs/sources_1/new/A.vhd:69]
+WARNING: [Synth 8-614] signal 'rom_y' is read in the process but is not in the sensitivity list [Z:/University/Architettura Sistemi Digitali/VHDL/exercise/exe 8.1/exe 8.1.srcs/sources_1/new/A.vhd:69]
+WARNING: [Synth 8-614] signal 'ctr' is read in the process but is not in the sensitivity list [Z:/University/Architettura Sistemi Digitali/VHDL/exercise/exe 8.1/exe 8.1.srcs/sources_1/new/A.vhd:69]
+INFO: [Synth 8-256] done synthesizing module 'A' (0#1) [Z:/University/Architettura Sistemi Digitali/VHDL/exercise/exe 8.1/exe 8.1.srcs/sources_1/new/A.vhd:15]
+INFO: [Synth 8-638] synthesizing module 'B' [Z:/University/Architettura Sistemi Digitali/VHDL/exercise/exe 8.1/exe 8.1.srcs/sources_1/new/B.vhd:21]
+INFO: [Synth 8-638] synthesizing module 'MEM' [Z:/University/Architettura Sistemi Digitali/VHDL/exercise/exe 8.1/exe 8.1.srcs/sources_1/imports/VHDL/VIVADO-PROJECTS/MEM/MEM.srcs/sources_1/new/MEM.vhd:20]
+	Parameter N bound to: 16 - type: integer 
+	Parameter M bound to: 8 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'MEM' (0#1) [Z:/University/Architettura Sistemi Digitali/VHDL/exercise/exe 8.1/exe 8.1.srcs/sources_1/imports/VHDL/VIVADO-PROJECTS/MEM/MEM.srcs/sources_1/new/MEM.vhd:20]
+INFO: [Synth 8-256] done synthesizing module 'B' (0#1) [Z:/University/Architettura Sistemi Digitali/VHDL/exercise/exe 8.1/exe 8.1.srcs/sources_1/new/B.vhd:21]
+INFO: [Synth 8-256] done synthesizing module 'A_B' (0#1) [Z:/University/Architettura Sistemi Digitali/VHDL/exercise/exe 8.1/exe 8.1.srcs/sources_1/new/sys.vhd:14]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:07 ; elapsed = 00:00:10 . Memory (MB): peak = 1425.137 ; gain = 507.562
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:07 ; elapsed = 00:00:10 . Memory (MB): peak = 1425.137 ; gain = 507.562
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:07 ; elapsed = 00:00:10 . Memory (MB): peak = 1425.137 ; gain = 507.562
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.112 . Memory (MB): peak = 1425.137 ; gain = 0.000
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [Z:/University/Architettura Sistemi Digitali/VHDL/exercise/exe 8.1/exe 8.1.srcs/constrs_1/imports/constraints/Nexys-A7-100T-Master.xdc]
+Finished Parsing XDC File [Z:/University/Architettura Sistemi Digitali/VHDL/exercise/exe 8.1/exe 8.1.srcs/constrs_1/imports/constraints/Nexys-A7-100T-Master.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [Z:/University/Architettura Sistemi Digitali/VHDL/exercise/exe 8.1/exe 8.1.srcs/constrs_1/imports/constraints/Nexys-A7-100T-Master.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/A_B_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/A_B_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1508.535 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.007 . Memory (MB): peak = 1508.535 ; gain = 0.000
+INFO: [Designutils 20-5440] No compile time benefit to using incremental synthesis; A full resynthesis will be run
+INFO: [Designutils 20-4379] Flow is switching to default flow due to incremental criteria not met. If you would like to alter this behaviour and have the flow terminate instead, please set the following parameter config_implementation {autoIncr.Synth.RejectBehavior Terminate}
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:18 ; elapsed = 00:00:24 . Memory (MB): peak = 1508.535 ; gain = 590.961
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7a100tcsg324-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:18 ; elapsed = 00:00:24 . Memory (MB): peak = 1508.535 ; gain = 590.961
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:18 ; elapsed = 00:00:24 . Memory (MB): peak = 1508.535 ; gain = 590.961
+---------------------------------------------------------------------------------
+INFO: [Synth 8-802] inferred FSM for state register 'BTN_state_reg' in module 'ButtonDebouncer'
+INFO: [Synth 8-802] inferred FSM for state register 'state_c_reg' in module 'A'
+INFO: [Synth 8-802] inferred FSM for state register 'state_c_reg' in module 'B'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+             not_pressed |                               00 |                               00
+             chk_pressed |                               01 |                               01
+                 pressed |                               10 |                               10
+         chk_not_pressed |                               11 |                               11
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'BTN_state_reg' using encoding 'sequential' in module 'ButtonDebouncer'
+WARNING: [Synth 8-327] inferring latch for variable 'd_reg' [Z:/University/Architettura Sistemi Digitali/VHDL/exercise/exe 8.1/exe 8.1.srcs/sources_1/new/A.vhd:98]
+WARNING: [Synth 8-327] inferring latch for variable 'FSM_sequential_state_n_reg' [Z:/University/Architettura Sistemi Digitali/VHDL/exercise/exe 8.1/exe 8.1.srcs/sources_1/new/A.vhd:75]
+WARNING: [Synth 8-327] inferring latch for variable 'FSM_onehot_state_n_reg' [Z:/University/Architettura Sistemi Digitali/VHDL/exercise/exe 8.1/exe 8.1.srcs/sources_1/new/A.vhd:75]
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                    idle |                              001 |                               00
+                wait_ack |                              010 |                               01
+               send_data |                              100 |                               10
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'state_c_reg' using encoding 'one-hot' in module 'A'
+WARNING: [Synth 8-327] inferring latch for variable 'FSM_onehot_state_n_reg' [Z:/University/Architettura Sistemi Digitali/VHDL/exercise/exe 8.1/exe 8.1.srcs/sources_1/new/A.vhd:75]
+WARNING: [Synth 8-327] inferring latch for variable 'REQ_reg' [Z:/University/Architettura Sistemi Digitali/VHDL/exercise/exe 8.1/exe 8.1.srcs/sources_1/new/A.vhd:77]
+WARNING: [Synth 8-327] inferring latch for variable 'ctr_en_reg' [Z:/University/Architettura Sistemi Digitali/VHDL/exercise/exe 8.1/exe 8.1.srcs/sources_1/new/A.vhd:64]
+WARNING: [Synth 8-327] inferring latch for variable 'rom_read_reg' [Z:/University/Architettura Sistemi Digitali/VHDL/exercise/exe 8.1/exe 8.1.srcs/sources_1/new/A.vhd:56]
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                wait_req |                              001 |                               00
+                wait_ack |                              010 |                               01
+               take_data |                              100 |                               10
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'state_c_reg' using encoding 'one-hot' in module 'B'
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:18 ; elapsed = 00:00:26 . Memory (MB): peak = 1508.535 ; gain = 590.961
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input   32 Bit       Adders := 1     
+	   2 Input    8 Bit       Adders := 1     
+	   2 Input    4 Bit       Adders := 2     
++---Registers : 
+	               32 Bit    Registers := 1     
+	                8 Bit    Registers := 20    
+	                4 Bit    Registers := 2     
+	                1 Bit    Registers := 8     
++---Muxes : 
+	   2 Input   32 Bit        Muxes := 1     
+	   2 Input    8 Bit        Muxes := 65    
+	  17 Input    5 Bit        Muxes := 1     
+	   2 Input    4 Bit        Muxes := 5     
+	   4 Input    4 Bit        Muxes := 5     
+	   3 Input    3 Bit        Muxes := 2     
+	   2 Input    3 Bit        Muxes := 4     
+	   4 Input    2 Bit        Muxes := 1     
+	   2 Input    2 Bit        Muxes := 6     
+	   4 Input    1 Bit        Muxes := 2     
+	   2 Input    1 Bit        Muxes := 9     
+	   3 Input    1 Bit        Muxes := 12    
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 240 (col length:80)
+BRAMs: 270 (col length: RAMB18 80 RAMB36 40)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-7080] Parallel synthesis criteria is not met
+WARNING: [Synth 8-3332] Sequential element (A/d_reg[6]) is unused and will be removed from module A_B.
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:23 ; elapsed = 00:00:32 . Memory (MB): peak = 1508.535 ; gain = 590.961
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:29 ; elapsed = 00:00:39 . Memory (MB): peak = 1508.535 ; gain = 590.961
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:31 ; elapsed = 00:00:40 . Memory (MB): peak = 1508.535 ; gain = 590.961
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:31 ; elapsed = 00:00:41 . Memory (MB): peak = 1508.535 ; gain = 590.961
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:37 ; elapsed = 00:00:47 . Memory (MB): peak = 1508.535 ; gain = 590.961
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:37 ; elapsed = 00:00:47 . Memory (MB): peak = 1508.535 ; gain = 590.961
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:37 ; elapsed = 00:00:47 . Memory (MB): peak = 1508.535 ; gain = 590.961
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:37 ; elapsed = 00:00:47 . Memory (MB): peak = 1508.535 ; gain = 590.961
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:37 ; elapsed = 00:00:47 . Memory (MB): peak = 1508.535 ; gain = 590.961
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:37 ; elapsed = 00:00:47 . Memory (MB): peak = 1508.535 ; gain = 590.961
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+-------+------+
+|      |Cell   |Count |
++------+-------+------+
+|1     |BUFG   |     1|
+|2     |CARRY4 |    10|
+|3     |LUT1   |     4|
+|4     |LUT2   |    14|
+|5     |LUT3   |    16|
+|6     |LUT4   |    16|
+|7     |LUT5   |    16|
+|8     |LUT6   |   198|
+|9     |FDRE   |   210|
+|10    |FDSE   |     1|
+|11    |LD     |    11|
+|12    |IBUF   |     3|
+|13    |OBUF   |     8|
++------+-------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:37 ; elapsed = 00:00:47 . Memory (MB): peak = 1508.535 ; gain = 590.961
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 9 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:27 ; elapsed = 00:00:42 . Memory (MB): peak = 1508.535 ; gain = 507.562
+Synthesis Optimization Complete : Time (s): cpu = 00:00:37 ; elapsed = 00:00:48 . Memory (MB): peak = 1508.535 ; gain = 590.961
+INFO: [Project 1-571] Translating synthesized netlist
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.010 . Memory (MB): peak = 1508.535 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 21 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1508.535 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 11 instances were transformed.
+  LD => LDCE: 11 instances
+
+Synth Design complete | Checksum: df534b2e
+INFO: [Common 17-83] Releasing license: Synthesis
+46 Infos, 13 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:42 ; elapsed = 00:00:57 . Memory (MB): peak = 1508.535 ; gain = 983.613
+INFO: [Common 17-1381] The checkpoint 'Z:/University/Architettura Sistemi Digitali/VHDL/exercise/exe 8.1/exe 8.1.runs/synth_1/A_B.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file A_B_utilization_synth.rpt -pb A_B_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Mon Nov 25 15:52:47 2024...
