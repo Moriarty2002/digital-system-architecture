@@ -1,0 +1,31 @@
+#-----------------------------------------------------------
+# Vivado v2023.1 (64-bit)
+# SW Build 3865809 on Sun May  7 15:05:29 MDT 2023
+# IP Build 3864474 on Sun May  7 20:36:21 MDT 2023
+# SharedData Build 3865790 on Sun May 07 13:33:03 MDT 2023
+# Start of session at: Thu Feb 15 09:36:49 2024
+# Process ID: 13000
+# Current directory: C:/VIVADO PROJECT/10_interfaccia_seriale
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent19432 C:\VIVADO PROJECT\10_interfaccia_seriale\10_interfaccia_seriale.xpr
+# Log file: C:/VIVADO PROJECT/10_interfaccia_seriale/vivado.log
+# Journal file: C:/VIVADO PROJECT/10_interfaccia_seriale\vivado.jou
+# Running On: LAPTOP-VPMO8ALM, OS: Windows, CPU Frequency: 1498 MHz, CPU Physical cores: 4, Host memory: 8385 MB
+#-----------------------------------------------------------
+start_gui
+open_project {C:/VIVADO PROJECT/10_interfaccia_seriale/10_interfaccia_seriale.xpr}
+update_compile_order -fileset sources_1
+synth_design -rtl -rtl_skip_mlo -name rtl_1
+synth_design -rtl -rtl_skip_mlo -name rtl_1
+launch_simulation
+open_wave_config {C:/VIVADO PROJECT/10_interfaccia_seriale/sis_tot_tb_behav.wcfg}
+source sis_tot_tb.tcl
+run 100ns
+run 100ns
+run 100us
+run 100us
+synth_design -rtl -rtl_skip_mlo -name rtl_1
+write_schematic -format pdf -orientation portrait C:/Users/Win10/Desktop/schematic_10.pdf
+relaunch_sim
+run 100us
+run 100us
+close_sim

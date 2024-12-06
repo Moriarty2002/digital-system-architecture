@@ -46,13 +46,18 @@ begin
 
         -- Apply NXT signal -- REMEMBER TO LOW THE TRIGGER TIME OF THE DEBOUNCER BTN
         NXT_tb <= '1';
-        wait for 500 ns;
+        wait for 100 ns;
         NXT_tb <= '0';
         wait for 250 ns;
 
         -- Apply NXT signal again
         NXT_tb <= '1';
-        wait for 10 ns;
+        wait for 100 ns;
+        NXT_tb <= '0';
+        wait for 50 ns;
+        
+        NXT_tb <= '1';
+        wait for 100 ns;
         NXT_tb <= '0';
         wait for 50 ns;
 

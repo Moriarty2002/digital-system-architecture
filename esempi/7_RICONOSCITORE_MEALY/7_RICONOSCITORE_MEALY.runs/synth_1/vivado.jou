@@ -3,8 +3,8 @@
 # SW Build 3865809 on Sun May  7 15:05:29 MDT 2023
 # IP Build 3864474 on Sun May  7 20:36:21 MDT 2023
 # SharedData Build 3865790 on Sun May 07 13:33:03 MDT 2023
-# Start of session at: Sat Oct 26 09:02:44 2024
-# Process ID: 14672
+# Start of session at: Fri Nov 29 21:58:18 2024
+# Process ID: 9712
 # Current directory: Z:/University/Architettura Sistemi Digitali/VHDL/esempi/7_RICONOSCITORE_MEALY/7_RICONOSCITORE_MEALY.runs/synth_1
 # Command line: vivado.exe -log Riconoscitore_Mealy.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source Riconoscitore_Mealy.tcl
 # Log file: Z:/University/Architettura Sistemi Digitali/VHDL/esempi/7_RICONOSCITORE_MEALY/7_RICONOSCITORE_MEALY.runs/synth_1/Riconoscitore_Mealy.vds

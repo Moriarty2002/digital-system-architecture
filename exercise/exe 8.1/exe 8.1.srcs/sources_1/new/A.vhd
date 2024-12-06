@@ -29,29 +29,18 @@ type state_a is (IDLE, WAIT_ACK, SEND_DATA);
 signal state_c: state_a := IDLE; -- current state
 signal state_n: state_a := IDLE; -- next state
 
-function reverse_any_vector (a: in std_logic_vector)
-    return std_logic_vector is
-      variable result: std_logic_vector(a'RANGE);
-      alias aa: std_logic_vector(a'REVERSE_RANGE) is a;
-    begin
-      for i in aa'RANGE loop
-        result(i) := aa(i);
-      end loop;
-      return result;
-    end; -- function reverse_any_vector
 
 begin
 
     dec_4_16: entity work.decoder_4_16
 	port map (
-		w => ctr,
-		enable => '1',
-		reverse_any_vector(y) => rom_addr
+		input => ctr,
+		output => rom_addr
 	);
     
     rom: entity work.rom_16x8_one_hot
     port map (
-        input_lines => rom_addr, -- TODO: convertire valore in stringa da 16 bit
+        input_lines => rom_addr, 
         CLK => CLK,
         read => rom_read,
         data_out => rom_y
@@ -66,7 +55,7 @@ begin
         count => ctr
     );
     
-    CU_f_a: process(NXT, ACKb)
+    CU_f_a: process(NXT, ACKb) -- TODO: set the value for every signal in every state
     begin
         case state_c is
             

@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GenRun Id="synth_1" LaunchPart="xc7a100tcsg324-1" LaunchTime="1733434860" LaunchIncrCheckpoint="$PSRCDIR/utils_1/imports/synth_1/A.dcp">
+  <File Type="PA-TCL" Name="A_B.tcl"/>
+  <File Type="RDS-PROPCONSTRS" Name="A_B_drc_synth.rpt"/>
+  <File Type="REPORTS-TCL" Name="A_B_reports.tcl"/>
+  <File Type="RDS-RDS" Name="A_B.vds"/>
+  <File Type="RDS-UTIL" Name="A_B_utilization_synth.rpt"/>
+  <File Type="RDS-UTIL-PB" Name="A_B_utilization_synth.pb"/>
+  <File Type="RDS-DCP" Name="A_B.dcp"/>
+  <File Type="VDS-TIMINGSUMMARY" Name="A_B_timing_summary_synth.rpt"/>
+  <File Type="VDS-TIMING-PB" Name="A_B_timing_summary_synth.pb"/>
+  <FileSet Name="sources" Type="DesignSrcs" RelSrcDir="$PSRCDIR/sources_1" RelGenDir="$PGENDIR/sources_1">
+    <Filter Type="Srcs"/>
+    <File Path="$PSRCDIR/sources_1/imports/new/rom_16x8.vhd">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../exe 8.1/exe 8.1.srcs/sources_1/imports/VHDL/VIVADO-PROJECTS/ROM_16x8/ROM_16x8.srcs/sources_1/new/rom_16x8.vhd"/>
+        <Attr Name="ImportTime" Val="1732132781"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/new/Contatore.vhd">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../exe 6.2/exe 6.2.srcs/sources_1/imports/new/Contatore.vhd"/>
+        <Attr Name="ImportTime" Val="1733249305"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/Downloads/RS232RefComp.vhd">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="C:/Users/mespo/Downloads/RS232RefComp.vhd"/>
+        <Attr Name="ImportTime" Val="1733334752"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/A.vhd">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/exercise/exe 8.1/exe 8.1.srcs/sources_1/imports/VHDL/VIVADO-PROJECTS/MEM/MEM.srcs/sources_1/new/MEM.vhd">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../exe 8.1/exe 8.1.srcs/sources_1/imports/VHDL/VIVADO-PROJECTS/MEM/MEM.srcs/sources_1/new/MEM.vhd"/>
+        <Attr Name="ImportTime" Val="1732311996"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/B.vhd">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/A_B.vhd">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="DesignMode" Val="RTL"/>
+      <Option Name="TopModule" Val="A_B"/>
+      <Option Name="TopAutoSet" Val="TRUE"/>
+    </Config>
+  </FileSet>
+  <FileSet Name="constrs_in" Type="Constrs" RelSrcDir="$PSRCDIR/constrs_1" RelGenDir="$PGENDIR/constrs_1">
+    <Filter Type="Constrs"/>
+    <Config>
+      <Option Name="ConstrsType" Val="XDC"/>
+    </Config>
+  </FileSet>
+  <FileSet Name="utils" Type="Utils" RelSrcDir="$PSRCDIR/utils_1" RelGenDir="$PGENDIR/utils_1">
+    <Filter Type="Utils"/>
+    <File Path="$PSRCDIR/utils_1/imports/synth_1/A.dcp">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedInSteps" Val="synth_1"/>
+        <Attr Name="AutoDcp" Val="1"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="TopAutoSet" Val="TRUE"/>
+    </Config>
+  </FileSet>
+  <Strategy Version="1" Minor="2">
+    <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2023">
+      <Desc>Vivado Synthesis Defaults</Desc>
+    </StratHandle>
+    <Step Id="synth_design"/>
+  </Strategy>
+</GenRun>

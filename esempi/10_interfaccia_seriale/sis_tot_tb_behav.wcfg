@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wave_config>
+   <wave_state>
+   </wave_state>
+   <db_ref_list>
+      <db_ref path="sis_tot_tb_behav.wdb" id="1">
+         <top_modules>
+            <top_module name="sis_tot_tb" />
+         </top_modules>
+      </db_ref>
+   </db_ref_list>
+   <zoom_setting>
+      <ZoomStartTime time="200,477.400 ns"></ZoomStartTime>
+      <ZoomEndTime time="201,000.401 ns"></ZoomEndTime>
+      <Cursor1Time time="201,000.000 ns"></Cursor1Time>
+   </zoom_setting>
+   <column_width_setting>
+      <NameColumnWidth column_width="340"></NameColumnWidth>
+      <ValueColumnWidth column_width="150"></ValueColumnWidth>
+   </column_width_setting>
+   <WVObjectSize size="12" />
+   <wvobject fp_name="/sis_tot_tb/CLK" type="logic">
+      <obj_property name="ElementShortName">CLK</obj_property>
+      <obj_property name="ObjectShortName">CLK</obj_property>
+   </wvobject>
+   <wvobject fp_name="/sis_tot_tb/RST" type="logic">
+      <obj_property name="ElementShortName">RST</obj_property>
+      <obj_property name="ObjectShortName">RST</obj_property>
+   </wvobject>
+   <wvobject fp_name="/sis_tot_tb/start" type="logic">
+      <obj_property name="ElementShortName">start</obj_property>
+      <obj_property name="ObjectShortName">start</obj_property>
+   </wvobject>
+   <wvobject fp_name="/sis_tot_tb/stop_the_clock" type="other">
+      <obj_property name="ElementShortName">stop_the_clock</obj_property>
+      <obj_property name="ObjectShortName">stop_the_clock</obj_property>
+   </wvobject>
+   <wvobject fp_name="/sis_tot_tb/clock_period" type="other">
+      <obj_property name="ElementShortName">clock_period</obj_property>
+      <obj_property name="ObjectShortName">clock_period</obj_property>
+   </wvobject>
+   <wvobject fp_name="/sis_tot_tb/uut/nodo_a/ROM88/dout" type="array">
+      <obj_property name="ElementShortName">dout[7:0]</obj_property>
+      <obj_property name="ObjectShortName">dout[7:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/sis_tot_tb/uut/nodo_a/CONT_MOD_8/Y" type="array">
+      <obj_property name="ElementShortName">Y[2:0]</obj_property>
+      <obj_property name="ObjectShortName">Y[2:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/sis_tot_tb/uut/nodo_a/UART_A/DBIN" type="array">
+      <obj_property name="ElementShortName">DBIN[7:0]</obj_property>
+      <obj_property name="ObjectShortName">DBIN[7:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/sis_tot_tb/uut/nodo_a/stato_attuale" type="other">
+      <obj_property name="ElementShortName">stato_attuale</obj_property>
+      <obj_property name="ObjectShortName">stato_attuale</obj_property>
+   </wvobject>
+   <wvobject fp_name="/sis_tot_tb/uut/uscita_mem" type="array">
+      <obj_property name="ElementShortName">uscita_mem[7:0]</obj_property>
+      <obj_property name="ObjectShortName">uscita_mem[7:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/sis_tot_tb/uut/nodo_b/stato_attuale" type="other">
+      <obj_property name="ElementShortName">stato_attuale</obj_property>
+      <obj_property name="ObjectShortName">stato_attuale</obj_property>
+   </wvobject>
+   <wvobject fp_name="/sis_tot_tb/uut/nodo_b/UART_B/DBOUT" type="array">
+      <obj_property name="ElementShortName">DBOUT[7:0]</obj_property>
+      <obj_property name="ObjectShortName">DBOUT[7:0]</obj_property>
+   </wvobject>
+</wave_config>

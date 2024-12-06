@@ -1,0 +1,14 @@
+#-----------------------------------------------------------
+# Vivado v2023.1 (64-bit)
+# SW Build 3865809 on Sun May  7 15:05:29 MDT 2023
+# IP Build 3864474 on Sun May  7 20:36:21 MDT 2023
+# SharedData Build 3865790 on Sun May 07 13:33:03 MDT 2023
+# Start of session at: Sun Dec  1 14:48:52 2024
+# Process ID: 21108
+# Current directory: Z:/University/Architettura Sistemi Digitali/VHDL/exercise/exe 11.1/exe 11.1.runs/synth_1
+# Command line: vivado.exe -log omega_network.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source omega_network.tcl
+# Log file: Z:/University/Architettura Sistemi Digitali/VHDL/exercise/exe 11.1/exe 11.1.runs/synth_1/omega_network.vds
+# Journal file: Z:/University/Architettura Sistemi Digitali/VHDL/exercise/exe 11.1/exe 11.1.runs/synth_1\vivado.jou
+# Running On: Ryzen, OS: Windows, CPU Frequency: 1797 MHz, CPU Physical cores: 16, Host memory: 6280 MB
+#-----------------------------------------------------------
+source omega_network.tcl -notrace

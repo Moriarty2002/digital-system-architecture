@@ -11,8 +11,7 @@ Time Resolution for simulation is 1ps
 Compiling package std.standard
 Compiling package std.textio
 Compiling package ieee.std_logic_1164
-Compiling architecture behavior of entity xil_defaultlib.decoder_2_4 [decoder_2_4_default]
-Compiling architecture behavior of entity xil_defaultlib.decoder_4_16 [decoder_4_16_default]
+Compiling architecture behavioral of entity xil_defaultlib.decoder_4_16 [decoder_4_16_default]
 Compiling architecture behavioral of entity xil_defaultlib.rom_16x8_one_hot [rom_16x8_one_hot_default]
 Compiling architecture behavioral of entity xil_defaultlib.m_trasformation [m_trasformation_default]
 Compiling architecture architectural of entity xil_defaultlib.m_system [m_system_default]

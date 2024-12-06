@@ -1,0 +1,13 @@
+# compile vhdl design source files
+vhdl xil_defaultlib  \
+"../../../../exe 6.1.srcs/sources_1/imports/new/Contatore.vhd" \
+"../../../../exe 6.1.srcs/sources_1/imports/new/MEM.vhd" \
+"../../../../exe 6.1.srcs/sources_1/imports/sources_1/new/decoder_4_16.vhd" \
+"../../../../exe 6.1.srcs/sources_1/imports/sources_1/imports/VIVADO-PROJECTS/ROM_16x8/ROM_16x8.srcs/sources_1/new/rom_16x8.vhd" \
+"../../../../exe 6.1.srcs/sources_1/imports/sources_1/new/m_trasformation.vhd" \
+"../../../../exe 6.1.srcs/sources_1/imports/sources_1/new/m_system.vhd" \
+"../../../../exe 6.1.srcs/sources_1/new/PO_PC.vhd" \
+"../../../../exe 6.1.srcs/sim_1/new/tb_PO_PC.vhd" \
+
+# Do not sort compile order
+nosort

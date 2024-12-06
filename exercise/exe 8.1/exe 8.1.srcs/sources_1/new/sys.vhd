@@ -22,12 +22,12 @@ signal s_NXT: std_logic := '0';
 signal s_DATA: std_logic_vector(7 downto 0) := "00000000";
 
 
-begin  -- TODO: Btn Debouncer crea problemi, controllare
+begin  
 
     BTN: entity work.ButtonDebouncer
     generic map (                       
         CLK_period => 10, -- periodo del clock (della board) in nanosecondi
-        btn_noise_time => 10--10000000 -- durata stimata dell'oscillazione del bottone in nanosecondi
+        btn_noise_time => 10000000 --10000000 -- durata stimata dell'oscillazione del bottone in nanosecondi
                                             -- il valore di default è 10 millisecondi
     )
     port map

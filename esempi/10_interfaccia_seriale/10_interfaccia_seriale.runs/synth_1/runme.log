@@ -1,0 +1,375 @@
+
+*** Running vivado
+    with args -log sis_tot_tb.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source sis_tot_tb.tcl
+
+
+ECHO is off.
+ECHO is off.
+
+****** Vivado v2023.1 (64-bit)
+  **** SW Build 3865809 on Sun May  7 15:05:29 MDT 2023
+  **** IP Build 3864474 on Sun May  7 20:36:21 MDT 2023
+  **** SharedData Build 3865790 on Sun May 07 13:33:03 MDT 2023
+    ** Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+    ** Copyright 2022-2023 Advanced Micro Devices, Inc. All Rights Reserved.
+
+source sis_tot_tb.tcl -notrace
+create_project: Time (s): cpu = 00:00:07 ; elapsed = 00:00:15 . Memory (MB): peak = 500.984 ; gain = 231.926
+Command: synth_design -top sis_tot_tb -part xc7a50ticsg324-1L
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a50ti'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a50ti'
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 2 processes.
+INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
+INFO: [Synth 8-7075] Helper process launched with PID 6376
+---------------------------------------------------------------------------------
+Starting Synthesize : Time (s): cpu = 00:00:05 ; elapsed = 00:00:06 . Memory (MB): peak = 934.688 ; gain = 408.598
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'sis_tot_tb' [Z:/University/Architettura Sistemi Digitali/VHDL/esempi/10_interfaccia_seriale/10_interfaccia_seriale.srcs/sources_1/new/sis_tot_tb.vhd:11]
+INFO: [Synth 8-3491] module 'sis_tot' declared at 'Z:/University/Architettura Sistemi Digitali/VHDL/esempi/10_interfaccia_seriale/10_interfaccia_seriale.srcs/sources_1/new/sis_tot.vhd:6' bound to instance 'uut' of component 'sis_tot' [Z:/University/Architettura Sistemi Digitali/VHDL/esempi/10_interfaccia_seriale/10_interfaccia_seriale.srcs/sources_1/new/sis_tot_tb.vhd:26]
+INFO: [Synth 8-638] synthesizing module 'sis_tot' [Z:/University/Architettura Sistemi Digitali/VHDL/esempi/10_interfaccia_seriale/10_interfaccia_seriale.srcs/sources_1/new/sis_tot.vhd:14]
+INFO: [Synth 8-3491] module 'unita_A' declared at 'Z:/University/Architettura Sistemi Digitali/VHDL/esempi/10_interfaccia_seriale/10_interfaccia_seriale.srcs/sources_1/new/unita_A.vhd:4' bound to instance 'nodo_a' of component 'unita_A' [Z:/University/Architettura Sistemi Digitali/VHDL/esempi/10_interfaccia_seriale/10_interfaccia_seriale.srcs/sources_1/new/sis_tot.vhd:48]
+INFO: [Synth 8-638] synthesizing module 'unita_A' [Z:/University/Architettura Sistemi Digitali/VHDL/esempi/10_interfaccia_seriale/10_interfaccia_seriale.srcs/sources_1/new/unita_A.vhd:16]
+INFO: [Synth 8-3491] module 'cont_mod_N' declared at 'Z:/University/Architettura Sistemi Digitali/VHDL/esempi/10_interfaccia_seriale/10_interfaccia_seriale.srcs/sources_1/new/cont_mod_N.vhd:6' bound to instance 'CONT_MOD_8' of component 'cont_mod_N' [Z:/University/Architettura Sistemi Digitali/VHDL/esempi/10_interfaccia_seriale/10_interfaccia_seriale.srcs/sources_1/new/unita_A.vhd:80]
+INFO: [Synth 8-638] synthesizing module 'cont_mod_N' [Z:/University/Architettura Sistemi Digitali/VHDL/esempi/10_interfaccia_seriale/10_interfaccia_seriale.srcs/sources_1/new/cont_mod_N.vhd:19]
+	Parameter N bound to: 3 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'cont_mod_N' (0#1) [Z:/University/Architettura Sistemi Digitali/VHDL/esempi/10_interfaccia_seriale/10_interfaccia_seriale.srcs/sources_1/new/cont_mod_N.vhd:19]
+INFO: [Synth 8-3491] module 'ROM_8_8' declared at 'Z:/University/Architettura Sistemi Digitali/VHDL/esempi/10_interfaccia_seriale/10_interfaccia_seriale.srcs/sources_1/new/ROM_8_8.vhd:6' bound to instance 'ROM88' of component 'ROM_8_8' [Z:/University/Architettura Sistemi Digitali/VHDL/esempi/10_interfaccia_seriale/10_interfaccia_seriale.srcs/sources_1/new/unita_A.vhd:88]
+INFO: [Synth 8-638] synthesizing module 'ROM_8_8' [Z:/University/Architettura Sistemi Digitali/VHDL/esempi/10_interfaccia_seriale/10_interfaccia_seriale.srcs/sources_1/new/ROM_8_8.vhd:19]
+	Parameter len_add bound to: 3 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'ROM_8_8' (0#1) [Z:/University/Architettura Sistemi Digitali/VHDL/esempi/10_interfaccia_seriale/10_interfaccia_seriale.srcs/sources_1/new/ROM_8_8.vhd:19]
+INFO: [Synth 8-3491] module 'Rs232RefComp' declared at 'Z:/University/Architettura Sistemi Digitali/VHDL/esempi/10_interfaccia_seriale/10_interfaccia_seriale.srcs/sources_1/new/RS232RefComp.vhd:24' bound to instance 'UART_A' of component 'Rs232RefComp' [Z:/University/Architettura Sistemi Digitali/VHDL/esempi/10_interfaccia_seriale/10_interfaccia_seriale.srcs/sources_1/new/unita_A.vhd:96]
+INFO: [Synth 8-638] synthesizing module 'Rs232RefComp' [Z:/University/Architettura Sistemi Digitali/VHDL/esempi/10_interfaccia_seriale/10_interfaccia_seriale.srcs/sources_1/new/RS232RefComp.vhd:41]
+WARNING: [Synth 8-614] signal 'shift' is read in the process but is not in the sensitivity list [Z:/University/Architettura Sistemi Digitali/VHDL/esempi/10_interfaccia_seriale/10_interfaccia_seriale.srcs/sources_1/new/RS232RefComp.vhd:393]
+INFO: [Synth 8-256] done synthesizing module 'Rs232RefComp' (0#1) [Z:/University/Architettura Sistemi Digitali/VHDL/esempi/10_interfaccia_seriale/10_interfaccia_seriale.srcs/sources_1/new/RS232RefComp.vhd:41]
+WARNING: [Synth 8-614] signal 'reset' is read in the process but is not in the sensitivity list [Z:/University/Architettura Sistemi Digitali/VHDL/esempi/10_interfaccia_seriale/10_interfaccia_seriale.srcs/sources_1/new/unita_A.vhd:113]
+WARNING: [Synth 8-614] signal 'stato_attuale' is read in the process but is not in the sensitivity list [Z:/University/Architettura Sistemi Digitali/VHDL/esempi/10_interfaccia_seriale/10_interfaccia_seriale.srcs/sources_1/new/unita_A.vhd:113]
+WARNING: [Synth 8-614] signal 'start' is read in the process but is not in the sensitivity list [Z:/University/Architettura Sistemi Digitali/VHDL/esempi/10_interfaccia_seriale/10_interfaccia_seriale.srcs/sources_1/new/unita_A.vhd:113]
+WARNING: [Synth 8-614] signal 'e_read_rom' is read in the process but is not in the sensitivity list [Z:/University/Architettura Sistemi Digitali/VHDL/esempi/10_interfaccia_seriale/10_interfaccia_seriale.srcs/sources_1/new/unita_A.vhd:113]
+WARNING: [Synth 8-614] signal 'temp_out' is read in the process but is not in the sensitivity list [Z:/University/Architettura Sistemi Digitali/VHDL/esempi/10_interfaccia_seriale/10_interfaccia_seriale.srcs/sources_1/new/unita_A.vhd:113]
+WARNING: [Synth 8-614] signal 'canale_lettura_risposte' is read in the process but is not in the sensitivity list [Z:/University/Architettura Sistemi Digitali/VHDL/esempi/10_interfaccia_seriale/10_interfaccia_seriale.srcs/sources_1/new/unita_A.vhd:113]
+WARNING: [Synth 8-614] signal 'temp_WR' is read in the process but is not in the sensitivity list [Z:/University/Architettura Sistemi Digitali/VHDL/esempi/10_interfaccia_seriale/10_interfaccia_seriale.srcs/sources_1/new/unita_A.vhd:113]
+WARNING: [Synth 8-614] signal 'temp_RDA' is read in the process but is not in the sensitivity list [Z:/University/Architettura Sistemi Digitali/VHDL/esempi/10_interfaccia_seriale/10_interfaccia_seriale.srcs/sources_1/new/unita_A.vhd:113]
+INFO: [Synth 8-256] done synthesizing module 'unita_A' (0#1) [Z:/University/Architettura Sistemi Digitali/VHDL/esempi/10_interfaccia_seriale/10_interfaccia_seriale.srcs/sources_1/new/unita_A.vhd:16]
+INFO: [Synth 8-3491] module 'unita_B' declared at 'Z:/University/Architettura Sistemi Digitali/VHDL/esempi/10_interfaccia_seriale/10_interfaccia_seriale.srcs/sources_1/new/unita_B.vhd:4' bound to instance 'nodo_b' of component 'unita_B' [Z:/University/Architettura Sistemi Digitali/VHDL/esempi/10_interfaccia_seriale/10_interfaccia_seriale.srcs/sources_1/new/sis_tot.vhd:60]
+INFO: [Synth 8-638] synthesizing module 'unita_B' [Z:/University/Architettura Sistemi Digitali/VHDL/esempi/10_interfaccia_seriale/10_interfaccia_seriale.srcs/sources_1/new/unita_B.vhd:17]
+INFO: [Synth 8-3491] module 'cont_mod_N' declared at 'Z:/University/Architettura Sistemi Digitali/VHDL/esempi/10_interfaccia_seriale/10_interfaccia_seriale.srcs/sources_1/new/cont_mod_N.vhd:6' bound to instance 'CONT_MOD_8' of component 'cont_mod_N' [Z:/University/Architettura Sistemi Digitali/VHDL/esempi/10_interfaccia_seriale/10_interfaccia_seriale.srcs/sources_1/new/unita_B.vhd:81]
+INFO: [Synth 8-3491] module 'memoria' declared at 'Z:/University/Architettura Sistemi Digitali/VHDL/esempi/10_interfaccia_seriale/10_interfaccia_seriale.srcs/sources_1/new/memoria.vhd:6' bound to instance 'MEM' of component 'memoria' [Z:/University/Architettura Sistemi Digitali/VHDL/esempi/10_interfaccia_seriale/10_interfaccia_seriale.srcs/sources_1/new/unita_B.vhd:89]
+INFO: [Synth 8-638] synthesizing module 'memoria' [Z:/University/Architettura Sistemi Digitali/VHDL/esempi/10_interfaccia_seriale/10_interfaccia_seriale.srcs/sources_1/new/memoria.vhd:19]
+	Parameter len_add bound to: 3 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'memoria' (0#1) [Z:/University/Architettura Sistemi Digitali/VHDL/esempi/10_interfaccia_seriale/10_interfaccia_seriale.srcs/sources_1/new/memoria.vhd:19]
+INFO: [Synth 8-3491] module 'Rs232RefComp' declared at 'Z:/University/Architettura Sistemi Digitali/VHDL/esempi/10_interfaccia_seriale/10_interfaccia_seriale.srcs/sources_1/new/RS232RefComp.vhd:24' bound to instance 'UART_B' of component 'Rs232RefComp' [Z:/University/Architettura Sistemi Digitali/VHDL/esempi/10_interfaccia_seriale/10_interfaccia_seriale.srcs/sources_1/new/unita_B.vhd:98]
+WARNING: [Synth 8-614] signal 'reset' is read in the process but is not in the sensitivity list [Z:/University/Architettura Sistemi Digitali/VHDL/esempi/10_interfaccia_seriale/10_interfaccia_seriale.srcs/sources_1/new/unita_B.vhd:115]
+WARNING: [Synth 8-614] signal 'stato_attuale' is read in the process but is not in the sensitivity list [Z:/University/Architettura Sistemi Digitali/VHDL/esempi/10_interfaccia_seriale/10_interfaccia_seriale.srcs/sources_1/new/unita_B.vhd:115]
+WARNING: [Synth 8-614] signal 'canale_invio_richieste' is read in the process but is not in the sensitivity list [Z:/University/Architettura Sistemi Digitali/VHDL/esempi/10_interfaccia_seriale/10_interfaccia_seriale.srcs/sources_1/new/unita_B.vhd:115]
+WARNING: [Synth 8-614] signal 'stop_read' is read in the process but is not in the sensitivity list [Z:/University/Architettura Sistemi Digitali/VHDL/esempi/10_interfaccia_seriale/10_interfaccia_seriale.srcs/sources_1/new/unita_B.vhd:115]
+WARNING: [Synth 8-614] signal 'temp_DBOUT' is read in the process but is not in the sensitivity list [Z:/University/Architettura Sistemi Digitali/VHDL/esempi/10_interfaccia_seriale/10_interfaccia_seriale.srcs/sources_1/new/unita_B.vhd:115]
+WARNING: [Synth 8-614] signal 'temp_RDA' is read in the process but is not in the sensitivity list [Z:/University/Architettura Sistemi Digitali/VHDL/esempi/10_interfaccia_seriale/10_interfaccia_seriale.srcs/sources_1/new/unita_B.vhd:115]
+INFO: [Synth 8-256] done synthesizing module 'unita_B' (0#1) [Z:/University/Architettura Sistemi Digitali/VHDL/esempi/10_interfaccia_seriale/10_interfaccia_seriale.srcs/sources_1/new/unita_B.vhd:17]
+INFO: [Synth 8-256] done synthesizing module 'sis_tot' (0#1) [Z:/University/Architettura Sistemi Digitali/VHDL/esempi/10_interfaccia_seriale/10_interfaccia_seriale.srcs/sources_1/new/sis_tot.vhd:14]
+WARNING: [Synth 8-312] ignoring unsynthesizable construct: wait statement with no conditon [Z:/University/Architettura Sistemi Digitali/VHDL/esempi/10_interfaccia_seriale/10_interfaccia_seriale.srcs/sources_1/new/sis_tot_tb.vhd:37]
+WARNING: [Synth 8-312] ignoring unsynthesizable construct: wait statement with no conditon [Z:/University/Architettura Sistemi Digitali/VHDL/esempi/10_interfaccia_seriale/10_interfaccia_seriale.srcs/sources_1/new/sis_tot_tb.vhd:40]
+WARNING: [Synth 8-312] ignoring unsynthesizable construct: wait statement with no conditon [Z:/University/Architettura Sistemi Digitali/VHDL/esempi/10_interfaccia_seriale/10_interfaccia_seriale.srcs/sources_1/new/sis_tot_tb.vhd:42]
+WARNING: [Synth 8-312] ignoring unsynthesizable construct: wait statement with no conditon [Z:/University/Architettura Sistemi Digitali/VHDL/esempi/10_interfaccia_seriale/10_interfaccia_seriale.srcs/sources_1/new/sis_tot_tb.vhd:44]
+WARNING: [Synth 8-312] ignoring unsynthesizable construct: wait statement with no conditon [Z:/University/Architettura Sistemi Digitali/VHDL/esempi/10_interfaccia_seriale/10_interfaccia_seriale.srcs/sources_1/new/sis_tot_tb.vhd:46]
+WARNING: [Synth 8-312] ignoring unsynthesizable construct: wait statement with no conditon [Z:/University/Architettura Sistemi Digitali/VHDL/esempi/10_interfaccia_seriale/10_interfaccia_seriale.srcs/sources_1/new/sis_tot_tb.vhd:48]
+WARNING: [Synth 8-312] ignoring unsynthesizable construct: wait statement with no conditon [Z:/University/Architettura Sistemi Digitali/VHDL/esempi/10_interfaccia_seriale/10_interfaccia_seriale.srcs/sources_1/new/sis_tot_tb.vhd:50]
+WARNING: [Synth 8-312] ignoring unsynthesizable construct: wait statement with no conditon [Z:/University/Architettura Sistemi Digitali/VHDL/esempi/10_interfaccia_seriale/10_interfaccia_seriale.srcs/sources_1/new/sis_tot_tb.vhd:52]
+WARNING: [Synth 8-312] ignoring unsynthesizable construct: wait statement with no conditon [Z:/University/Architettura Sistemi Digitali/VHDL/esempi/10_interfaccia_seriale/10_interfaccia_seriale.srcs/sources_1/new/sis_tot_tb.vhd:54]
+WARNING: [Synth 8-312] ignoring unsynthesizable construct: wait statement with no conditon [Z:/University/Architettura Sistemi Digitali/VHDL/esempi/10_interfaccia_seriale/10_interfaccia_seriale.srcs/sources_1/new/sis_tot_tb.vhd:56]
+WARNING: [Synth 8-312] ignoring unsynthesizable construct: wait statement with no conditon [Z:/University/Architettura Sistemi Digitali/VHDL/esempi/10_interfaccia_seriale/10_interfaccia_seriale.srcs/sources_1/new/sis_tot_tb.vhd:58]
+WARNING: [Synth 8-312] ignoring unsynthesizable construct: wait statement with no conditon [Z:/University/Architettura Sistemi Digitali/VHDL/esempi/10_interfaccia_seriale/10_interfaccia_seriale.srcs/sources_1/new/sis_tot_tb.vhd:60]
+WARNING: [Synth 8-312] ignoring unsynthesizable construct: wait statement with no conditon [Z:/University/Architettura Sistemi Digitali/VHDL/esempi/10_interfaccia_seriale/10_interfaccia_seriale.srcs/sources_1/new/sis_tot_tb.vhd:62]
+WARNING: [Synth 8-312] ignoring unsynthesizable construct: wait statement with no conditon [Z:/University/Architettura Sistemi Digitali/VHDL/esempi/10_interfaccia_seriale/10_interfaccia_seriale.srcs/sources_1/new/sis_tot_tb.vhd:64]
+WARNING: [Synth 8-312] ignoring unsynthesizable construct: wait statement with no conditon [Z:/University/Architettura Sistemi Digitali/VHDL/esempi/10_interfaccia_seriale/10_interfaccia_seriale.srcs/sources_1/new/sis_tot_tb.vhd:66]
+WARNING: [Synth 8-312] ignoring unsynthesizable construct: wait statement with no conditon [Z:/University/Architettura Sistemi Digitali/VHDL/esempi/10_interfaccia_seriale/10_interfaccia_seriale.srcs/sources_1/new/sis_tot_tb.vhd:68]
+WARNING: [Synth 8-312] ignoring unsynthesizable construct: wait statement with no conditon [Z:/University/Architettura Sistemi Digitali/VHDL/esempi/10_interfaccia_seriale/10_interfaccia_seriale.srcs/sources_1/new/sis_tot_tb.vhd:70]
+WARNING: [Synth 8-312] ignoring unsynthesizable construct: wait statement with no conditon [Z:/University/Architettura Sistemi Digitali/VHDL/esempi/10_interfaccia_seriale/10_interfaccia_seriale.srcs/sources_1/new/sis_tot_tb.vhd:72]
+WARNING: [Synth 8-312] ignoring unsynthesizable construct: wait statement with no conditon [Z:/University/Architettura Sistemi Digitali/VHDL/esempi/10_interfaccia_seriale/10_interfaccia_seriale.srcs/sources_1/new/sis_tot_tb.vhd:74]
+WARNING: [Synth 8-312] ignoring unsynthesizable construct: wait statement with no conditon [Z:/University/Architettura Sistemi Digitali/VHDL/esempi/10_interfaccia_seriale/10_interfaccia_seriale.srcs/sources_1/new/sis_tot_tb.vhd:76]
+WARNING: [Synth 8-312] ignoring unsynthesizable construct: wait statement with no conditon [Z:/University/Architettura Sistemi Digitali/VHDL/esempi/10_interfaccia_seriale/10_interfaccia_seriale.srcs/sources_1/new/sis_tot_tb.vhd:78]
+WARNING: [Synth 8-312] ignoring unsynthesizable construct: wait statement with no conditon [Z:/University/Architettura Sistemi Digitali/VHDL/esempi/10_interfaccia_seriale/10_interfaccia_seriale.srcs/sources_1/new/sis_tot_tb.vhd:80]
+WARNING: [Synth 8-312] ignoring unsynthesizable construct: wait statement with no conditon [Z:/University/Architettura Sistemi Digitali/VHDL/esempi/10_interfaccia_seriale/10_interfaccia_seriale.srcs/sources_1/new/sis_tot_tb.vhd:82]
+WARNING: [Synth 8-312] ignoring unsynthesizable construct: wait statement with no conditon [Z:/University/Architettura Sistemi Digitali/VHDL/esempi/10_interfaccia_seriale/10_interfaccia_seriale.srcs/sources_1/new/sis_tot_tb.vhd:84]
+WARNING: [Synth 8-312] ignoring unsynthesizable construct: wait statement with no conditon [Z:/University/Architettura Sistemi Digitali/VHDL/esempi/10_interfaccia_seriale/10_interfaccia_seriale.srcs/sources_1/new/sis_tot_tb.vhd:86]
+WARNING: [Synth 8-312] ignoring unsynthesizable construct: wait statement with no conditon [Z:/University/Architettura Sistemi Digitali/VHDL/esempi/10_interfaccia_seriale/10_interfaccia_seriale.srcs/sources_1/new/sis_tot_tb.vhd:88]
+WARNING: [Synth 8-312] ignoring unsynthesizable construct: wait statement with no conditon [Z:/University/Architettura Sistemi Digitali/VHDL/esempi/10_interfaccia_seriale/10_interfaccia_seriale.srcs/sources_1/new/sis_tot_tb.vhd:90]
+WARNING: [Synth 8-312] ignoring unsynthesizable construct: wait statement with no conditon [Z:/University/Architettura Sistemi Digitali/VHDL/esempi/10_interfaccia_seriale/10_interfaccia_seriale.srcs/sources_1/new/sis_tot_tb.vhd:98]
+INFO: [Synth 8-256] done synthesizing module 'sis_tot_tb' (0#1) [Z:/University/Architettura Sistemi Digitali/VHDL/esempi/10_interfaccia_seriale/10_interfaccia_seriale.srcs/sources_1/new/sis_tot_tb.vhd:11]
+WARNING: [Synth 8-3848] Net temp_DBIN in module/entity unita_B does not have driver. [Z:/University/Architettura Sistemi Digitali/VHDL/esempi/10_interfaccia_seriale/10_interfaccia_seriale.srcs/sources_1/new/unita_B.vhd:62]
+WARNING: [Synth 8-7129] Port start in module unita_B is either unconnected or has no load
+---------------------------------------------------------------------------------
+Finished Synthesize : Time (s): cpu = 00:00:07 ; elapsed = 00:00:08 . Memory (MB): peak = 1027.117 ; gain = 501.027
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:07 ; elapsed = 00:00:09 . Memory (MB): peak = 1027.117 ; gain = 501.027
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7a50ticsg324-1L
+INFO: [Device 21-403] Loading part xc7a50ticsg324-1L
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:07 ; elapsed = 00:00:09 . Memory (MB): peak = 1027.117 ; gain = 501.027
+---------------------------------------------------------------------------------
+INFO: [Synth 8-802] inferred FSM for state register 'strCur_reg' in module 'Rs232RefComp'
+INFO: [Synth 8-802] inferred FSM for state register 'sttCur_reg' in module 'Rs232RefComp'
+INFO: [Synth 8-802] inferred FSM for state register 'stbeCur_reg' in module 'Rs232RefComp'
+INFO: [Synth 8-802] inferred FSM for state register 'stato_attuale_reg' in module 'unita_A'
+INFO: [Synth 8-802] inferred FSM for state register 'stato_attuale_reg' in module 'unita_B'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                 sttidle |                              001 |                               00
+             stttransfer |                              010 |                               01
+                sttshift |                              100 |                               10
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'sttCur_reg' using encoding 'one-hot' in module 'Rs232RefComp'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                 stridle |                               00 |                               00
+           streightdelay |                               01 |                               01
+              strgetdata |                               10 |                               10
+            strcheckstop |                               11 |                               11
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'strCur_reg' using encoding 'sequential' in module 'Rs232RefComp'
+WARNING: [Synth 8-327] inferring latch for variable 'TBE_reg' [Z:/University/Architettura Sistemi Digitali/VHDL/esempi/10_interfaccia_seriale/10_interfaccia_seriale.srcs/sources_1/new/RS232RefComp.vhd:495]
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                stbeidle |                               00 |                               00
+              stbesettbe |                               01 |                               01
+            stbewaitload |                               10 |                               10
+           stbewaitwrite |                               11 |                               11
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'stbeCur_reg' using encoding 'sequential' in module 'Rs232RefComp'
+WARNING: [Synth 8-327] inferring latch for variable 'stop_read_reg' [Z:/University/Architettura Sistemi Digitali/VHDL/esempi/10_interfaccia_seriale/10_interfaccia_seriale.srcs/sources_1/new/unita_A.vhd:153]
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                    idle |                               00 |                               00
+            preparazione |                               01 |                               01
+            trasmissione |                               10 |                               10
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'stato_attuale_reg' using encoding 'sequential' in module 'unita_A'
+WARNING: [Synth 8-327] inferring latch for variable 'canale_invio_richieste_reg' [Z:/University/Architettura Sistemi Digitali/VHDL/esempi/10_interfaccia_seriale/10_interfaccia_seriale.srcs/sources_1/new/unita_A.vhd:138]
+WARNING: [Synth 8-327] inferring latch for variable 'temp_WR_reg' [Z:/University/Architettura Sistemi Digitali/VHDL/esempi/10_interfaccia_seriale/10_interfaccia_seriale.srcs/sources_1/new/unita_A.vhd:106]
+WARNING: [Synth 8-327] inferring latch for variable 'e_contatore_reg' [Z:/University/Architettura Sistemi Digitali/VHDL/esempi/10_interfaccia_seriale/10_interfaccia_seriale.srcs/sources_1/new/unita_A.vhd:84]
+WARNING: [Synth 8-327] inferring latch for variable 'temp_DBIN_reg' [Z:/University/Architettura Sistemi Digitali/VHDL/esempi/10_interfaccia_seriale/10_interfaccia_seriale.srcs/sources_1/new/unita_A.vhd:101]
+WARNING: [Synth 8-327] inferring latch for variable 'canale_lettura_risposte_reg' [Z:/University/Architettura Sistemi Digitali/VHDL/esempi/10_interfaccia_seriale/10_interfaccia_seriale.srcs/sources_1/new/unita_B.vhd:127]
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                    idle |                               00 |                               00
+               ricezione |                               01 |                               01
+               scrittura |                               10 |                               10
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'stato_attuale_reg' using encoding 'sequential' in module 'unita_B'
+WARNING: [Synth 8-327] inferring latch for variable 'e_contatore_reg' [Z:/University/Architettura Sistemi Digitali/VHDL/esempi/10_interfaccia_seriale/10_interfaccia_seriale.srcs/sources_1/new/unita_B.vhd:85]
+WARNING: [Synth 8-327] inferring latch for variable 'temp_in_mem_reg' [Z:/University/Architettura Sistemi Digitali/VHDL/esempi/10_interfaccia_seriale/10_interfaccia_seriale.srcs/sources_1/new/unita_B.vhd:94]
+WARNING: [Synth 8-327] inferring latch for variable 'temp_RD_reg' [Z:/University/Architettura Sistemi Digitali/VHDL/esempi/10_interfaccia_seriale/10_interfaccia_seriale.srcs/sources_1/new/unita_B.vhd:107]
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:08 ; elapsed = 00:00:09 . Memory (MB): peak = 1027.117 ; gain = 501.027
+---------------------------------------------------------------------------------
+No constraint files found.
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input    9 Bit       Adders := 2     
+	   2 Input    4 Bit       Adders := 8     
+	   2 Input    3 Bit       Adders := 2     
++---XORs : 
+	   8 Input      1 Bit         XORs := 2     
+	   9 Input      1 Bit         XORs := 2     
++---Registers : 
+	               11 Bit    Registers := 2     
+	               10 Bit    Registers := 2     
+	                9 Bit    Registers := 2     
+	                8 Bit    Registers := 3     
+	                4 Bit    Registers := 8     
+	                3 Bit    Registers := 4     
+	                1 Bit    Registers := 10    
++---RAMs : 
+	               64 Bit	(8 X 8 bit)          RAMs := 1     
++---Muxes : 
+	   2 Input   11 Bit        Muxes := 2     
+	   3 Input    3 Bit        Muxes := 2     
+	   2 Input    3 Bit        Muxes := 4     
+	   4 Input    2 Bit        Muxes := 4     
+	   2 Input    2 Bit        Muxes := 20    
+	   3 Input    2 Bit        Muxes := 2     
+	   2 Input    1 Bit        Muxes := 2     
+	   4 Input    1 Bit        Muxes := 12    
+	   3 Input    1 Bit        Muxes := 14    
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 120 (col length:60)
+BRAMs: 150 (col length: RAMB18 60 RAMB36 30)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+No constraint files found.
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-7080] Parallel synthesis criteria is not met
+WARNING: [Synth 8-6014] Unused sequential element uut/nodo_b/MEM/MEM_reg was removed. 
+WARNING: [Synth 8-3332] Sequential element (uut/nodo_a/UART_A/FSM_onehot_sttCur_reg[2]) is unused and will be removed from module sis_tot_tb.
+WARNING: [Synth 8-3332] Sequential element (uut/nodo_a/UART_A/FSM_onehot_sttCur_reg[1]) is unused and will be removed from module sis_tot_tb.
+WARNING: [Synth 8-3332] Sequential element (uut/nodo_a/UART_A/FSM_onehot_sttCur_reg[0]) is unused and will be removed from module sis_tot_tb.
+WARNING: [Synth 8-3332] Sequential element (uut/nodo_a/UART_A/FSM_sequential_strCur_reg[1]) is unused and will be removed from module sis_tot_tb.
+WARNING: [Synth 8-3332] Sequential element (uut/nodo_a/UART_A/FSM_sequential_strCur_reg[0]) is unused and will be removed from module sis_tot_tb.
+WARNING: [Synth 8-3332] Sequential element (uut/nodo_a/UART_A/TBE_reg) is unused and will be removed from module sis_tot_tb.
+WARNING: [Synth 8-3332] Sequential element (uut/nodo_a/UART_A/FSM_sequential_stbeCur_reg[1]) is unused and will be removed from module sis_tot_tb.
+WARNING: [Synth 8-3332] Sequential element (uut/nodo_a/UART_A/FSM_sequential_stbeCur_reg[0]) is unused and will be removed from module sis_tot_tb.
+WARNING: [Synth 8-3332] Sequential element (uut/nodo_a/stop_read_reg) is unused and will be removed from module sis_tot_tb.
+WARNING: [Synth 8-3332] Sequential element (uut/nodo_a/FSM_sequential_stato_attuale_reg[1]) is unused and will be removed from module sis_tot_tb.
+WARNING: [Synth 8-3332] Sequential element (uut/nodo_a/FSM_sequential_stato_attuale_reg[0]) is unused and will be removed from module sis_tot_tb.
+WARNING: [Synth 8-3332] Sequential element (uut/nodo_a/canale_invio_richieste_reg) is unused and will be removed from module sis_tot_tb.
+WARNING: [Synth 8-3332] Sequential element (uut/nodo_a/temp_WR_reg) is unused and will be removed from module sis_tot_tb.
+WARNING: [Synth 8-3332] Sequential element (uut/nodo_a/e_contatore_reg) is unused and will be removed from module sis_tot_tb.
+WARNING: [Synth 8-3332] Sequential element (uut/nodo_a/temp_DBIN_reg[7]) is unused and will be removed from module sis_tot_tb.
+WARNING: [Synth 8-3332] Sequential element (uut/nodo_a/temp_DBIN_reg[6]) is unused and will be removed from module sis_tot_tb.
+WARNING: [Synth 8-3332] Sequential element (uut/nodo_a/temp_DBIN_reg[5]) is unused and will be removed from module sis_tot_tb.
+WARNING: [Synth 8-3332] Sequential element (uut/nodo_a/temp_DBIN_reg[4]) is unused and will be removed from module sis_tot_tb.
+WARNING: [Synth 8-3332] Sequential element (uut/nodo_a/temp_DBIN_reg[3]) is unused and will be removed from module sis_tot_tb.
+WARNING: [Synth 8-3332] Sequential element (uut/nodo_a/temp_DBIN_reg[2]) is unused and will be removed from module sis_tot_tb.
+WARNING: [Synth 8-3332] Sequential element (uut/nodo_a/temp_DBIN_reg[1]) is unused and will be removed from module sis_tot_tb.
+WARNING: [Synth 8-3332] Sequential element (uut/nodo_a/temp_DBIN_reg[0]) is unused and will be removed from module sis_tot_tb.
+WARNING: [Synth 8-3332] Sequential element (uut/nodo_b/UART_B/FSM_onehot_sttCur_reg[2]) is unused and will be removed from module sis_tot_tb.
+WARNING: [Synth 8-3332] Sequential element (uut/nodo_b/UART_B/FSM_onehot_sttCur_reg[1]) is unused and will be removed from module sis_tot_tb.
+WARNING: [Synth 8-3332] Sequential element (uut/nodo_b/UART_B/FSM_onehot_sttCur_reg[0]) is unused and will be removed from module sis_tot_tb.
+WARNING: [Synth 8-3332] Sequential element (uut/nodo_b/UART_B/FSM_sequential_strCur_reg[1]) is unused and will be removed from module sis_tot_tb.
+WARNING: [Synth 8-3332] Sequential element (uut/nodo_b/UART_B/FSM_sequential_strCur_reg[0]) is unused and will be removed from module sis_tot_tb.
+WARNING: [Synth 8-3332] Sequential element (uut/nodo_b/UART_B/TBE_reg) is unused and will be removed from module sis_tot_tb.
+WARNING: [Synth 8-3332] Sequential element (uut/nodo_b/UART_B/FSM_sequential_stbeCur_reg[1]) is unused and will be removed from module sis_tot_tb.
+WARNING: [Synth 8-3332] Sequential element (uut/nodo_b/UART_B/FSM_sequential_stbeCur_reg[0]) is unused and will be removed from module sis_tot_tb.
+WARNING: [Synth 8-3332] Sequential element (uut/nodo_b/canale_lettura_risposte_reg) is unused and will be removed from module sis_tot_tb.
+WARNING: [Synth 8-3332] Sequential element (uut/nodo_b/FSM_sequential_stato_attuale_reg[1]) is unused and will be removed from module sis_tot_tb.
+WARNING: [Synth 8-3332] Sequential element (uut/nodo_b/FSM_sequential_stato_attuale_reg[0]) is unused and will be removed from module sis_tot_tb.
+WARNING: [Synth 8-3332] Sequential element (uut/nodo_b/e_contatore_reg) is unused and will be removed from module sis_tot_tb.
+WARNING: [Synth 8-3332] Sequential element (uut/nodo_b/temp_in_mem_reg[7]) is unused and will be removed from module sis_tot_tb.
+WARNING: [Synth 8-3332] Sequential element (uut/nodo_b/temp_in_mem_reg[6]) is unused and will be removed from module sis_tot_tb.
+WARNING: [Synth 8-3332] Sequential element (uut/nodo_b/temp_in_mem_reg[5]) is unused and will be removed from module sis_tot_tb.
+WARNING: [Synth 8-3332] Sequential element (uut/nodo_b/temp_in_mem_reg[4]) is unused and will be removed from module sis_tot_tb.
+WARNING: [Synth 8-3332] Sequential element (uut/nodo_b/temp_in_mem_reg[3]) is unused and will be removed from module sis_tot_tb.
+WARNING: [Synth 8-3332] Sequential element (uut/nodo_b/temp_in_mem_reg[2]) is unused and will be removed from module sis_tot_tb.
+WARNING: [Synth 8-3332] Sequential element (uut/nodo_b/temp_in_mem_reg[1]) is unused and will be removed from module sis_tot_tb.
+WARNING: [Synth 8-3332] Sequential element (uut/nodo_b/temp_in_mem_reg[0]) is unused and will be removed from module sis_tot_tb.
+WARNING: [Synth 8-3332] Sequential element (uut/nodo_b/temp_RD_reg) is unused and will be removed from module sis_tot_tb.
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:12 ; elapsed = 00:00:27 . Memory (MB): peak = 1215.180 ; gain = 689.090
+---------------------------------------------------------------------------------
+No constraint files found.
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:12 ; elapsed = 00:00:28 . Memory (MB): peak = 1215.180 ; gain = 689.090
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:12 ; elapsed = 00:00:28 . Memory (MB): peak = 1215.180 ; gain = 689.090
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:17 ; elapsed = 00:00:33 . Memory (MB): peak = 1215.180 ; gain = 689.090
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:17 ; elapsed = 00:00:33 . Memory (MB): peak = 1215.180 ; gain = 689.090
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:17 ; elapsed = 00:00:33 . Memory (MB): peak = 1215.180 ; gain = 689.090
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:17 ; elapsed = 00:00:33 . Memory (MB): peak = 1215.180 ; gain = 689.090
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:17 ; elapsed = 00:00:33 . Memory (MB): peak = 1215.180 ; gain = 689.090
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:17 ; elapsed = 00:00:33 . Memory (MB): peak = 1215.180 ; gain = 689.090
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++-+-----+------+
+| |Cell |Count |
++-+-----+------+
++-+-----+------+
+
+Report Instance Areas: 
++------+---------+-------+------+
+|      |Instance |Module |Cells |
++------+---------+-------+------+
+|1     |top      |       |     0|
++------+---------+-------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:17 ; elapsed = 00:00:33 . Memory (MB): peak = 1215.180 ; gain = 689.090
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 100 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:17 ; elapsed = 00:00:33 . Memory (MB): peak = 1215.180 ; gain = 689.090
+Synthesis Optimization Complete : Time (s): cpu = 00:00:17 ; elapsed = 00:00:33 . Memory (MB): peak = 1215.180 ; gain = 689.090
+INFO: [Project 1-571] Translating synthesized netlist
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1215.180 ; gain = 0.000
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1312.859 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Synth Design complete | Checksum: 84ff4350
+INFO: [Common 17-83] Releasing license: Synthesis
+45 Infos, 100 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:18 ; elapsed = 00:00:35 . Memory (MB): peak = 1312.859 ; gain = 811.613
+INFO: [Common 17-1381] The checkpoint 'Z:/University/Architettura Sistemi Digitali/VHDL/esempi/10_interfaccia_seriale/10_interfaccia_seriale.runs/synth_1/sis_tot_tb.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file sis_tot_tb_utilization_synth.rpt -pb sis_tot_tb_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Thu Dec  5 21:21:57 2024...

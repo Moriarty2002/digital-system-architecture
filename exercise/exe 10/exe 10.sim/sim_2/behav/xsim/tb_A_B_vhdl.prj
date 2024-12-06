@@ -1,0 +1,13 @@
+# compile vhdl design source files
+vhdl xil_defaultlib  \
+"../../../../exe 10.srcs/sources_1/imports/new/rom_16x8.vhd" \
+"../../../../exe 10.srcs/sources_1/imports/new/Contatore.vhd" \
+"../../../../exe 10.srcs/sources_1/imports/Downloads/RS232RefComp.vhd" \
+"../../../../exe 10.srcs/sources_1/new/A.vhd" \
+"../../../../exe 10.srcs/sources_1/imports/exercise/exe 8.1/exe 8.1.srcs/sources_1/imports/VHDL/VIVADO-PROJECTS/MEM/MEM.srcs/sources_1/new/MEM.vhd" \
+"../../../../exe 10.srcs/sources_1/new/B.vhd" \
+"../../../../exe 10.srcs/sources_1/new/A_B.vhd" \
+"../../../../exe 10.srcs/sim_2/new/tb_AB.vhd" \
+
+# Do not sort compile order
+nosort

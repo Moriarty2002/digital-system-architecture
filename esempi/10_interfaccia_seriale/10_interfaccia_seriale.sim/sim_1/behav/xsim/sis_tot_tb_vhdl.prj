@@ -1,0 +1,13 @@
+# compile vhdl design source files
+vhdl xil_defaultlib  \
+"../../../../10_interfaccia_seriale.srcs/sources_1/new/ROM_8_8.vhd" \
+"../../../../10_interfaccia_seriale.srcs/sources_1/new/RS232RefComp.vhd" \
+"../../../../10_interfaccia_seriale.srcs/sources_1/new/cont_mod_N.vhd" \
+"../../../../10_interfaccia_seriale.srcs/sources_1/new/memoria.vhd" \
+"../../../../10_interfaccia_seriale.srcs/sources_1/new/sis_tot.vhd" \
+"../../../../10_interfaccia_seriale.srcs/sources_1/new/unita_A.vhd" \
+"../../../../10_interfaccia_seriale.srcs/sources_1/new/unita_B.vhd" \
+"../../../../10_interfaccia_seriale.srcs/sources_1/new/sis_tot_tb.vhd" \
+
+# Do not sort compile order
+nosort

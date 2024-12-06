@@ -3,8 +3,8 @@
 # SW Build 3865809 on Sun May  7 15:05:29 MDT 2023
 # IP Build 3864474 on Sun May  7 20:36:21 MDT 2023
 # SharedData Build 3865790 on Sun May 07 13:33:03 MDT 2023
-# Start of session at: Mon Nov 25 15:51:12 2024
-# Process ID: 7732
+# Start of session at: Wed Dec  4 18:37:05 2024
+# Process ID: 6492
 # Current directory: Z:/University/Architettura Sistemi Digitali/VHDL/exercise/exe 8.1/exe 8.1.runs/synth_1
 # Command line: vivado.exe -log A_B.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source A_B.tcl
 # Log file: Z:/University/Architettura Sistemi Digitali/VHDL/exercise/exe 8.1/exe 8.1.runs/synth_1/A_B.vds

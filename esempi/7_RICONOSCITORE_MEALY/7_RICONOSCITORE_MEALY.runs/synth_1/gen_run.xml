@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<GenRun Id="synth_1" LaunchPart="xc7a50ticsg324-1L" LaunchTime="1729926160">
+<GenRun Id="synth_1" LaunchPart="xc7a50ticsg324-1L" LaunchTime="1732913892">
   <File Type="PA-TCL" Name="Riconoscitore_Mealy.tcl"/>
   <File Type="RDS-PROPCONSTRS" Name="Riconoscitore_Mealy_drc_synth.rpt"/>
   <File Type="REPORTS-TCL" Name="Riconoscitore_Mealy_reports.tcl"/>
