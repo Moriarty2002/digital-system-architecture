@@ -1,0 +1,14 @@
+# compile vhdl design source files
+vhdl xil_defaultlib  \
+"../../../../exe 12.srcs/sources_1/imports/new/Contatore.vhd" \
+"../../../../exe 12.srcs/sources_1/imports/new/ROM.vhd" \
+"../../../../exe 12.srcs/sources_1/new/A.vhd" \
+"../../../../exe 12.srcs/sources_1/imports/1-multiplexer21_dataflow/mux_2_1.vhd" \
+"../../../../exe 12.srcs/sources_1/imports/VHDL/exercise/exe 8.1 new/exe 8.1.srcs/sources_1/imports/VHDL/VIVADO-PROJECTS/MEM/MEM.srcs/sources_1/new/MEM.vhd" \
+"../../../../exe 12.srcs/sources_1/new/Adder_Carry_Look_Ahead.vhd" \
+"../../../../exe 12.srcs/sources_1/new/B.vhd" \
+"../../../../exe 12.srcs/sources_1/new/A_B.vhd" \
+"../../../../exe 12.srcs/sim_1/new/tb_A_B.vhd" \
+
+# Do not sort compile order
+nosort

@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wave_config>
+   <wave_state>
+   </wave_state>
+   <db_ref_list>
+      <db_ref path="tb_A_behav.wdb" id="1">
+         <top_modules>
+            <top_module name="tb_A" />
+         </top_modules>
+      </db_ref>
+   </db_ref_list>
+   <zoom_setting>
+      <ZoomStartTime time="0.000 ns"></ZoomStartTime>
+      <ZoomEndTime time="661.493 ns"></ZoomEndTime>
+      <Cursor1Time time="180.340 ns"></Cursor1Time>
+   </zoom_setting>
+   <column_width_setting>
+      <NameColumnWidth column_width="111"></NameColumnWidth>
+      <ValueColumnWidth column_width="72"></ValueColumnWidth>
+   </column_width_setting>
+   <WVObjectSize size="33" />
+   <wvobject fp_name="/tb_A/CLK" type="logic">
+      <obj_property name="ElementShortName">CLK</obj_property>
+      <obj_property name="ObjectShortName">CLK</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_A/RST" type="logic">
+      <obj_property name="ElementShortName">RST</obj_property>
+      <obj_property name="ObjectShortName">RST</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_A/START" type="logic">
+      <obj_property name="ElementShortName">START</obj_property>
+      <obj_property name="ObjectShortName">START</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_A/REQ" type="logic">
+      <obj_property name="ElementShortName">REQ</obj_property>
+      <obj_property name="ObjectShortName">REQ</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_A/ACK" type="logic">
+      <obj_property name="ElementShortName">ACK</obj_property>
+      <obj_property name="ObjectShortName">ACK</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_A/d" type="array">
+      <obj_property name="ElementShortName">d[3:0]</obj_property>
+      <obj_property name="ObjectShortName">d[3:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_A/uut/ROM/address" type="array">
+      <obj_property name="ElementShortName">address[2:0]</obj_property>
+      <obj_property name="ObjectShortName">address[2:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_A/uut/ROM/read" type="logic">
+      <obj_property name="ElementShortName">read</obj_property>
+      <obj_property name="ObjectShortName">read</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_A/uut/ROM/dout" type="array">
+      <obj_property name="ElementShortName">dout[3:0]</obj_property>
+      <obj_property name="ObjectShortName">dout[3:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_A/uut/ROM/N" type="other">
+      <obj_property name="ElementShortName">N</obj_property>
+      <obj_property name="ObjectShortName">N</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_A/uut/ROM/len" type="other">
+      <obj_property name="ElementShortName">len</obj_property>
+      <obj_property name="ObjectShortName">len</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_A/uut/ROM/ROM_8_8" type="array">
+      <obj_property name="ElementShortName">ROM_8_8[0:7][3:0]</obj_property>
+      <obj_property name="ObjectShortName">ROM_8_8[0:7][3:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_A/uut/counter/CLK" type="logic">
+      <obj_property name="ElementShortName">CLK</obj_property>
+      <obj_property name="ObjectShortName">CLK</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_A/uut/counter/enable" type="logic">
+      <obj_property name="ElementShortName">enable</obj_property>
+      <obj_property name="ObjectShortName">enable</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_A/uut/counter/RST" type="logic">
+      <obj_property name="ElementShortName">RST</obj_property>
+      <obj_property name="ObjectShortName">RST</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_A/uut/counter/max_reached" type="logic">
+      <obj_property name="ElementShortName">max_reached</obj_property>
+      <obj_property name="ObjectShortName">max_reached</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_A/uut/counter/count" type="array">
+      <obj_property name="ElementShortName">count[2:0]</obj_property>
+      <obj_property name="ObjectShortName">count[2:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_A/uut/counter/counter_value" type="array">
+      <obj_property name="ElementShortName">counter_value[2:0]</obj_property>
+      <obj_property name="ObjectShortName">counter_value[2:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_A/uut/counter/N" type="other">
+      <obj_property name="ElementShortName">N</obj_property>
+      <obj_property name="ObjectShortName">N</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_A/uut/counter/max_value" type="array">
+      <obj_property name="ElementShortName">max_value[2:0]</obj_property>
+      <obj_property name="ObjectShortName">max_value[2:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_A/uut/CLK" type="logic">
+      <obj_property name="ElementShortName">CLK</obj_property>
+      <obj_property name="ObjectShortName">CLK</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_A/uut/RST" type="logic">
+      <obj_property name="ElementShortName">RST</obj_property>
+      <obj_property name="ObjectShortName">RST</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_A/uut/START" type="logic">
+      <obj_property name="ElementShortName">START</obj_property>
+      <obj_property name="ObjectShortName">START</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_A/uut/REQ" type="logic">
+      <obj_property name="ElementShortName">REQ</obj_property>
+      <obj_property name="ObjectShortName">REQ</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_A/uut/ACK" type="logic">
+      <obj_property name="ElementShortName">ACK</obj_property>
+      <obj_property name="ObjectShortName">ACK</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_A/uut/d" type="array">
+      <obj_property name="ElementShortName">d[3:0]</obj_property>
+      <obj_property name="ObjectShortName">d[3:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_A/uut/ctr_en" type="logic">
+      <obj_property name="ElementShortName">ctr_en</obj_property>
+      <obj_property name="ObjectShortName">ctr_en</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_A/uut/ctr_rst" type="logic">
+      <obj_property name="ElementShortName">ctr_rst</obj_property>
+      <obj_property name="ObjectShortName">ctr_rst</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_A/uut/ctr_max" type="logic">
+      <obj_property name="ElementShortName">ctr_max</obj_property>
+      <obj_property name="ObjectShortName">ctr_max</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_A/uut/ctr" type="array">
+      <obj_property name="ElementShortName">ctr[2:0]</obj_property>
+      <obj_property name="ObjectShortName">ctr[2:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_A/uut/rom_read" type="logic">
+      <obj_property name="ElementShortName">rom_read</obj_property>
+      <obj_property name="ObjectShortName">rom_read</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_A/uut/rom_y" type="array">
+      <obj_property name="ElementShortName">rom_y[3:0]</obj_property>
+      <obj_property name="ObjectShortName">rom_y[3:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_A/uut/state_c" type="other">
+      <obj_property name="ElementShortName">state_c</obj_property>
+      <obj_property name="ObjectShortName">state_c</obj_property>
+   </wvobject>
+</wave_config>

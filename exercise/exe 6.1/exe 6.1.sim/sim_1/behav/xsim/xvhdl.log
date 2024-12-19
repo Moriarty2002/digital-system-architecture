@@ -1,4 +1,0 @@
-INFO: [VRFC 10-163] Analyzing VHDL file "Z:/University/Architettura Sistemi Digitali/VHDL/exercise/exe 6.1/exe 6.1.srcs/sources_1/new/PO_PC.vhd" into library xil_defaultlib
-INFO: [VRFC 10-3107] analyzing entity 'PO_PC'
-INFO: [VRFC 10-163] Analyzing VHDL file "Z:/University/Architettura Sistemi Digitali/VHDL/exercise/exe 6.1/exe 6.1.srcs/sim_1/new/tb_PO_PC.vhd" into library xil_defaultlib
-INFO: [VRFC 10-3107] analyzing entity 'tb_PO_PC'

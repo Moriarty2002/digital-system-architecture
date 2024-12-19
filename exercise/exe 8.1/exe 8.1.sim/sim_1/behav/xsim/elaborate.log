@@ -14,7 +14,7 @@ Compiling package ieee.std_logic_1164
 Compiling package ieee.numeric_std
 Compiling package ieee.std_logic_arith
 Compiling package ieee.std_logic_unsigned
-Compiling architecture behavioral of entity xil_defaultlib.ButtonDebouncer [\ButtonDebouncer(btn_noise_time=...]
+Compiling architecture behavioral of entity xil_defaultlib.ButtonDebouncer [buttondebouncer_default]
 Compiling architecture behavioral of entity xil_defaultlib.decoder_4_16 [decoder_4_16_default]
 Compiling architecture behavioral of entity xil_defaultlib.rom_16x8_one_hot [rom_16x8_one_hot_default]
 Compiling architecture behavioral of entity xil_defaultlib.Contatore [\Contatore(n=4)\]

@@ -5,16 +5,4 @@ Running: Z:/Programs/Xilinx/Vivado/2023.1/bin/unwrapped/win64.o/xelab.exe --incr
 Using 2 slave threads.
 Starting static elaboration
 Completed static elaboration
-Starting simulation data flow analysis
-Completed simulation data flow analysis
-Time Resolution for simulation is 1ps
-Compiling package std.standard
-Compiling package std.textio
-Compiling package ieee.std_logic_1164
-Compiling architecture dataflow of entity xil_defaultlib.mux_2_1 [mux_2_1_default]
-Compiling architecture structural of entity xil_defaultlib.mux_4_1 [mux_4_1_default]
-Compiling architecture structural of entity xil_defaultlib.mux_16_1 [mux_16_1_default]
-Compiling architecture dataflow of entity xil_defaultlib.demux_1_4 [demux_1_4_default]
-Compiling architecture structural of entity xil_defaultlib.interconnection_16_4 [interconnection_16_4_default]
-Compiling architecture tb of entity xil_defaultlib.interconnection_16_4_tb
-Built simulation snapshot interconnection_16_4_TB_behav
+INFO: [XSIM 43-4323] No Change in HDL. Linking previously generated obj files to create kernel
