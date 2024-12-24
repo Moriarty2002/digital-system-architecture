@@ -58,7 +58,6 @@ begin
     
     -- SECOND STAGE
     
---    sel_in_signal_switch_0_1 <= NOT source_req(3);  -- TODO: migliorare anche qui
     sel_in_signal_switch_0_1 <= NOT( ((source_req(3) AND (NOT node_i_0(3)))) OR (source_req(1) AND (NOT node_i_2(3)) AND ((NOT source_req(2)) OR node_i_1(3)) ) );
     switch_0_1: entity work.switch_2_2 
     generic map ( N => 3 ) 

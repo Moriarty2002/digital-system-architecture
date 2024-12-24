@@ -11,14 +11,14 @@
    </db_ref_list>
    <zoom_setting>
       <ZoomStartTime time="0.000 ns"></ZoomStartTime>
-      <ZoomEndTime time="1,000.001 ns"></ZoomEndTime>
-      <Cursor1Time time="187.140 ns"></Cursor1Time>
+      <ZoomEndTime time="732.821 ns"></ZoomEndTime>
+      <Cursor1Time time="364.647 ns"></Cursor1Time>
    </zoom_setting>
    <column_width_setting>
-      <NameColumnWidth column_width="165"></NameColumnWidth>
+      <NameColumnWidth column_width="140"></NameColumnWidth>
       <ValueColumnWidth column_width="72"></ValueColumnWidth>
    </column_width_setting>
-   <WVObjectSize size="7" />
+   <WVObjectSize size="5" />
    <wvobject fp_name="/tb_PO_PC/CLK_tb" type="logic">
       <obj_property name="ElementShortName">CLK_tb</obj_property>
       <obj_property name="ObjectShortName">CLK_tb</obj_property>
@@ -26,18 +26,6 @@
    <wvobject fp_name="/tb_PO_PC/RST_tb" type="logic">
       <obj_property name="ElementShortName">RST_tb</obj_property>
       <obj_property name="ObjectShortName">RST_tb</obj_property>
-   </wvobject>
-   <wvobject fp_name="/tb_PO_PC/STR_tb" type="logic">
-      <obj_property name="ElementShortName">STR_tb</obj_property>
-      <obj_property name="ObjectShortName">STR_tb</obj_property>
-   </wvobject>
-   <wvobject fp_name="/tb_PO_PC/uut/counter/count" type="array">
-      <obj_property name="ElementShortName">count[3:0]</obj_property>
-      <obj_property name="ObjectShortName">count[3:0]</obj_property>
-   </wvobject>
-   <wvobject fp_name="/tb_PO_PC/uut/state_curr" type="other">
-      <obj_property name="ElementShortName">state_curr</obj_property>
-      <obj_property name="ObjectShortName">state_curr</obj_property>
    </wvobject>
    <wvobject fp_name="/tb_PO_PC/y_tb" type="array">
       <obj_property name="DisplayName">label</obj_property>
@@ -47,12 +35,12 @@
       <obj_property name="UseCustomSignalColor">true</obj_property>
       <obj_property name="label">SYS OUT</obj_property>
    </wvobject>
-   <wvobject fp_name="/tb_PO_PC/uut/m_sys/output" type="array">
-      <obj_property name="DisplayName">label</obj_property>
-      <obj_property name="ElementShortName">output[3:0]</obj_property>
-      <obj_property name="ObjectShortName">output[3:0]</obj_property>
-      <obj_property name="label">M OUT</obj_property>
-      <obj_property name="CustomSignalColor">#FF00FF</obj_property>
-      <obj_property name="UseCustomSignalColor">true</obj_property>
+   <wvobject fp_name="/tb_PO_PC/READ_tb" type="logic">
+      <obj_property name="ElementShortName">READ_tb</obj_property>
+      <obj_property name="ObjectShortName">READ_tb</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_PO_PC/uut/PO_PC/READ" type="logic">
+      <obj_property name="ElementShortName">READ</obj_property>
+      <obj_property name="ObjectShortName">READ</obj_property>
    </wvobject>
 </wave_config>

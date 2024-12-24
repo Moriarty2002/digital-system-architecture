@@ -74,8 +74,8 @@ begin
                         end if;
                      
                      when R =>
+                        s_en_ctr <= '0';
                         if READ = '1' then
-                            s_en_ctr <= '0';
                             state_curr <= W;
                             s_read <= '1';
                             s_write <= '1';

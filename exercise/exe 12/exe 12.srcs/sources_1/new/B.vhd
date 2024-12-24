@@ -7,8 +7,9 @@ entity B is
        CLK : in STD_LOGIC;
        RST : in STD_LOGIC;
        REQ : in STD_LOGIC;
-       ACK : out STD_LOGIC;
-       D : in STD_LOGIC_VECTOR (3 downto 0)
+       ACK : out STD_LOGIC := '0';
+       D : in STD_LOGIC_VECTOR (3 downto 0);
+       R_out : out STD_LOGIC_VECTOR(3 downto 0)
     );
 end B;
 
@@ -59,6 +60,7 @@ begin
         C_out => tmp_C_out                  
     );
     
+    R_out <= s_mem_y;
     
     cu_B: process(CLK)
     begin

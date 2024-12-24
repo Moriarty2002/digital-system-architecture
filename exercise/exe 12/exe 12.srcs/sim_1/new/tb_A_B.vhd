@@ -11,6 +11,7 @@ architecture behavior of tb_A_B is
     signal CLK_tb : STD_LOGIC := '0';
     signal RST_tb : STD_LOGIC := '0';
     signal START_tb : STD_LOGIC := '0';
+    signal R_tb : STD_LOGIC_VECTOR(3 downto 0);
 
     -- Clock period definition
     constant CLK_PERIOD : time := 10 ns;
@@ -19,9 +20,11 @@ begin
 
     uut: entity work.A_B
     port map (
-        CLK => CLK_tb,
+        CLK_A => CLK_tb,
+        CLK_B => CLK_tb,
         RST => RST_tb,
-        START => START_tb
+        START => START_tb,
+        SUM => R_tb
     );
 
     clk_process : process
@@ -45,7 +48,6 @@ begin
         START_tb <= '1';   -- Start the process
         wait for 20 ns;
         START_tb <= '0'; 
-        -- You can add more START pulses or test sequences as needed
 
         -- End of test
         wait;

@@ -11,7 +11,7 @@ architecture testbench of tb_PO_PC is
     -- Signals to connect to PO_PC inputs/outputs
     signal CLK_tb : STD_LOGIC := '0';
     signal RST_tb : STD_LOGIC := '0';
-    signal STR_tb : STD_LOGIC := '0';
+    signal READ_tb : STD_LOGIC := '0';
     signal y_tb   : STD_LOGIC_VECTOR(3 downto 0);
 
     -- Clock period definition
@@ -20,12 +20,12 @@ architecture testbench of tb_PO_PC is
 begin
 
     -- Instantiate the Unit Under Test (UUT)
-    uut: entity work.PO_PC
+    uut: entity work.Controlled_PO_PC
         port map (
             CLK => CLK_tb,
             RST => RST_tb,
-            STR => STR_tb,
-            y   => y_tb
+            STR_READ => READ_tb,
+            MEM_OUT   => y_tb
         );
 
     -- Clock process
@@ -44,27 +44,32 @@ begin
     begin
         wait for 100ns;
         -- Initialize signals
-        RST_tb <= '1';  -- Assert reset
-        STR_tb <= '0';
-        wait for 20 ns;
+--        RST_tb <= '1';  -- Assert reset
+--        wait for 20 ns;
 
-        RST_tb <= '0';  -- Deassert reset
-        wait for 20 ns;
+--        RST_tb <= '0';  -- Deassert reset
+--        wait for 20 ns;
         
         -- Start the process by asserting STR
-        STR_tb <= '1';
-        wait for CLK_PERIOD;
-        STR_tb <= '0';
-
+        READ_tb <= '1';
+        wait for 50 ns;
+        READ_tb <= '0';
+        wait for 50 ns;
         
-        wait for 600ns;
-        STR_tb <= '1';
-        wait for CLK_PERIOD;
-        STR_tb <= '0';
-        wait for 100ns;
-        RST_TB <= '1';
-        wait for CLK_PERIOD;
-        RST_TB <= '0';
+        READ_tb <= '1';  
+        wait for 50 ns;
+        READ_tb <= '0';
+        wait for 50 ns;
+        
+        READ_tb <= '1';  
+        wait for 100 ns;
+        READ_tb <= '0';
+        wait for 50 ns;
+        
+        READ_tb <= '1';  
+        wait for 100 ns;
+        READ_tb <= '0';
+        wait for 50 ns;
         
         wait;
     end process stimulus;

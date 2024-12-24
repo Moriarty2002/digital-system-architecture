@@ -8,17 +8,14 @@ end A_B_tb;
 
 architecture testbench of A_B_tb is
 
-    -- Signals for the clock and stimulus
     signal CLK_tb : std_logic := '0';
     signal NXT_tb : std_logic := '0';
     signal TMP_sum_print_tb : std_logic_vector(7 downto 0);
 
-    -- Constants for clock period
     constant CLK_PERIOD : time := 10 ns; -- 100 MHz clock
 
 begin
 
-    -- Instantiate the Unit Under Test (UUT)
     UUT: entity work.A_B
     port map (
         CLK => CLK_tb,
@@ -38,27 +35,32 @@ begin
         end loop;
     end process;
 
-    -- Stimulus process to apply test cases
     stimulus_process : process
     begin
-        -- Wait for global reset to finish
         wait for 100 ns;
 
         -- Apply NXT signal -- REMEMBER TO LOW THE TRIGGER TIME OF THE DEBOUNCER BTN
         NXT_tb <= '1';
-        wait for 500 ns;
+        wait for 20 ns;
         NXT_tb <= '0';
-        wait for 250 ns;
+        wait for 100 ns;
 
-        -- Apply NXT signal again
         NXT_tb <= '1';
-        wait for 10 ns;
+        wait for 20 ns;
         NXT_tb <= '0';
-        wait for 50 ns;
+        wait for 100 ns;
+        
+        NXT_tb <= '1';
+        wait for 20 ns;
+        NXT_tb <= '0';
+        wait for 100 ns;
+        
+        NXT_tb <= '1';
+        wait for 20 ns;
+        NXT_tb <= '0';
+        wait for 100 ns;        
 
-        -- More stimulus can be added here for further testing
 
-        -- End simulation
         wait;
     end process;
 

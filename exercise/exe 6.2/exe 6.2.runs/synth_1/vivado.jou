@@ -3,8 +3,8 @@
 # SW Build 3865809 on Sun May  7 15:05:29 MDT 2023
 # IP Build 3864474 on Sun May  7 20:36:21 MDT 2023
 # SharedData Build 3865790 on Sun May 07 13:33:03 MDT 2023
-# Start of session at: Tue Dec  3 20:54:14 2024
-# Process ID: 9480
+# Start of session at: Tue Dec 24 17:22:11 2024
+# Process ID: 3256
 # Current directory: Z:/University/Architettura Sistemi Digitali/VHDL/exercise/exe 6.2/exe 6.2.runs/synth_1
 # Command line: vivado.exe -log Controlled_PO_PC.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source Controlled_PO_PC.tcl
 # Log file: Z:/University/Architettura Sistemi Digitali/VHDL/exercise/exe 6.2/exe 6.2.runs/synth_1/Controlled_PO_PC.vds

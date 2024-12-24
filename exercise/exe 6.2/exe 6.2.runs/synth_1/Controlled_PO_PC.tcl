@@ -70,9 +70,6 @@ proc create_report { reportName command } {
   }
 }
 OPTRACE "synth_1" START { ROLLUP_AUTO }
-set_param checkpoint.writeSynthRtdsInDcp 1
-set_msg_config -id {Synth 8-256} -limit 10000
-set_msg_config -id {Synth 8-638} -limit 10000
 OPTRACE "Creating in-memory project" START { }
 create_project -in_memory -part xc7a100tcsg324-1
 
@@ -108,6 +105,9 @@ OPTRACE "Adding files" END { }
 foreach dcp [get_files -quiet -all -filter file_type=="Design\ Checkpoint"] {
   set_property used_in_implementation false $dcp
 }
+read_xdc {{Z:/University/Architettura Sistemi Digitali/VHDL/exercise/exe 6.2/exe 6.2.srcs/constrs_1/imports/constraints/Nexys-A7-100T-Master.xdc}}
+set_property used_in_implementation false [get_files {{Z:/University/Architettura Sistemi Digitali/VHDL/exercise/exe 6.2/exe 6.2.srcs/constrs_1/imports/constraints/Nexys-A7-100T-Master.xdc}}]
+
 set_param ips.enableIPCacheLiteLoad 1
 
 read_checkpoint -auto_incremental -incremental {Z:/University/Architettura Sistemi Digitali/VHDL/exercise/exe 6.2/exe 6.2.srcs/utils_1/imports/synth_1/PO_PC.dcp}

@@ -48,69 +48,60 @@ begin
         node_i_2 <= "0000";
         node_i_3 <= "0000";
         source_req <= "1000"; -- Request from node 0
-        wait for 50 ns;
+        wait for 100 ns;
         
         node_i_0 <= "0001";  -- 00 as destination, 01 as message
         node_i_1 <= "0000";
         node_i_2 <= "0000";
         node_i_3 <= "0000";
         source_req <= "1000"; -- Request from node 0
-        wait for 50 ns;
-        
-        node_i_0 <= "0101";  -- 01 as destination, 01 as message
-        node_i_1 <= "0000";
-        node_i_2 <= "0000";
-        node_i_3 <= "0000";
-        source_req <= "1000"; -- Request from node 0
-        wait for 50 ns;
+        wait for 100 ns;
 
-        
---        -- Test case 2: Send from node 1
---        node_i_0 <= "0000";
---        node_i_1 <= "1111";  -- 11 as destination, 11 as message
---        node_i_2 <= "0000";
---        node_i_3 <= "0000";
---        source_req <= "0100"; -- Request from node 1
---        wait for 50 ns;
 
         -- Test case 3: Send from node 2
         node_i_0 <= "0000";
         node_i_1 <= "0000";
-        node_i_2 <= "0011";  -- 00 as destination, 11 as message
+        node_i_2 <= "0001";  -- 00 as destination
         node_i_3 <= "0000";
         source_req <= "0010"; -- Request from node 2
-        wait for 50 ns;
+        wait for 100 ns;
         
         node_i_0 <= "0000";
         node_i_1 <= "0000";
-        node_i_2 <= "1011";  -- 10 as destination, 11 as message
+        node_i_2 <= "1001";  -- 10 as destination
         node_i_3 <= "0000";
         source_req <= "0010"; -- Request from node 2
-        wait for 50 ns;
+        wait for 100 ns;
         
         node_i_0 <= "0000";
         node_i_1 <= "0000";
-        node_i_2 <= "0111";  -- 00 as destination, 11 as message
+        node_i_2 <= "0101";  -- 00 as destination
         node_i_3 <= "0000";
         source_req <= "0010"; -- Request from node 2
-        wait for 50 ns;
-        
+        wait for 100 ns;
 
-        -- Test case 4: Send from node 3
-        node_i_0 <= "0000";
-        node_i_1 <= "0000";
-        node_i_2 <= "0000";
-        node_i_3 <= "0101";  -- 01 as destination, 01 as message
-        source_req <= "0001"; -- Request from node 3
-        wait for 50 ns;
-
-        -- Test case 5: Multiple requests, node 0 and node 1
-        node_i_0 <= "1101";  -- 11 as destination, 01 as message
-        node_i_1 <= "1010";  -- 10 as destination, 10 as message
+        -- Test case 5: Multiple requests non collision, node 0 and node 1
+        node_i_0 <= "1101";  -- 11 as destination
+        node_i_1 <= "0001";  -- 00 as destination
         node_i_2 <= "0000";
         node_i_3 <= "0000";
         source_req <= "1100"; -- Requests from node 0 and node 1
-        wait for 50 ns;
+        wait for 100 ns;
+        
+        -- Test case 6: Multiple requests collision, node 0 and node 1
+        node_i_0 <= "1101";  -- 11 as destination
+        node_i_1 <= "1001";  -- 10 as destination
+        node_i_2 <= "0000";
+        node_i_3 <= "0000";
+        source_req <= "1100"; -- Requests from node 0 and node 1
+        wait for 100 ns;
+        
+        -- Test case 6: Multiple requests collision, node 1 and node 2
+        node_i_0 <= "0000";  
+        node_i_1 <= "1001";  -- 10 as destination
+        node_i_2 <= "0000";
+        node_i_3 <= "0001";  -- 11 as destination
+        source_req <= "0101"; -- Requests from node 0 and node 1
 
         -- Stop simulation
         wait;

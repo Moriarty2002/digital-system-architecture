@@ -26,9 +26,8 @@ begin  -- TODO: Btn Debouncer crea problemi, controllare
 
     BTN: entity work.ButtonDebouncer
     generic map (                       
-        CLK_period => 10, -- periodo del clock (della board) in nanosecondi
-        btn_noise_time => 10--10000000 -- durata stimata dell'oscillazione del bottone in nanosecondi
-                                            -- il valore di default è 10 millisecondi
+        CLK_period => 10, -- clk period
+        btn_noise_time => 10--10000000 noise time ns
     )
     port map
     ( RST => RST,

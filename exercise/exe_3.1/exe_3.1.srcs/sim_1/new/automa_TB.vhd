@@ -46,23 +46,28 @@ begin
         -- EDIT Adapt initialization as needed
         input <= '0';
         mode <= '1';
-
+        wait for 10ns;
+        
         -- insert stimulus here 
-		input<='0';
-		wait for 10 ns;
-		input<='0';
-		wait for 10 ns;
 		input<='1';
 		wait for 10 ns;
 		input<='0';
 		wait for 10 ns;
 		input<='1';
 		wait for 10 ns;
+		
+		
+		input<='1';
+		wait for 10 ns;
+		input<='0';
+		mode <= '0';
+		
+		wait for 10 ns;
 		input<='1';
 		wait for 10 ns;
 		input<='0';
 		wait for 10 ns;
-		input<='0';
+		input<='1';
 		
         wait;
     end process;

@@ -21,7 +21,7 @@ begin
     PO_PC: entity work.PO_PC
     port map (
         CLK => CLK,
-        RST => RST,
+        RST => s_RST,
         STR => s_STR_READ,
         READ => s_STR_READ,
         y => MEM_OUT
@@ -30,7 +30,7 @@ begin
     BTN_RST : entity work.ButtonDebouncer 
     generic map (
         CLK_PERIOD => 10,
-        BTN_NOISE_TIME => 10000000
+        BTN_NOISE_TIME => 10
     )
     port map (
         CLK => CLK,
@@ -42,7 +42,7 @@ begin
     BTN_STR_READ : entity work.ButtonDebouncer 
     generic map (
         CLK_PERIOD => 10,
-        BTN_NOISE_TIME => 10000000
+        BTN_NOISE_TIME => 10
     )
     port map (
         CLK => CLK,

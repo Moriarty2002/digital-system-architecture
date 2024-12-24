@@ -3,8 +3,8 @@ use IEEE.STD_LOGIC_1164.ALL;
 use work.all;
 
 entity automa2 is
-    Port ( s_in: std_logic; -- switch input
-           s_m: std_logic; -- switch mode
+    Port ( s_in: in STD_LOGIC; -- switch input
+           s_m: in STD_LOGIC; -- switch mode
            load_input : in STD_LOGIC;
            load_mode : in STD_LOGIC;
            CLK, RST: in STD_LOGIC;

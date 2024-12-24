@@ -70,6 +70,7 @@ proc create_report { reportName command } {
   }
 }
 OPTRACE "synth_1" START { ROLLUP_AUTO }
+set_param chipscope.maxJobs 4
 OPTRACE "Creating in-memory project" START { }
 create_project -in_memory -part xc7a100tcsg324-1
 
@@ -79,7 +80,7 @@ set_param synth.vivado.isSynthRun true
 set_property webtalk.parent_dir {Z:/University/Architettura Sistemi Digitali/VHDL/exercise/exe 12/exe 12.cache/wt} [current_project]
 set_property parent.project_path {Z:/University/Architettura Sistemi Digitali/VHDL/exercise/exe 12/exe 12.xpr} [current_project]
 set_property default_lib xil_defaultlib [current_project]
-set_property target_language Verilog [current_project]
+set_property target_language VHDL [current_project]
 set_property board_part digilentinc.com:nexys-a7-100t:part0:1.3 [current_project]
 set_property ip_output_repo {z:/University/Architettura Sistemi Digitali/VHDL/exercise/exe 12/exe 12.cache/ip} [current_project]
 set_property ip_cache_permissions {read write} [current_project]
@@ -104,6 +105,9 @@ OPTRACE "Adding files" END { }
 foreach dcp [get_files -quiet -all -filter file_type=="Design\ Checkpoint"] {
   set_property used_in_implementation false $dcp
 }
+read_xdc {{Z:/University/Architettura Sistemi Digitali/VHDL/exercise/exe 12/exe 12.srcs/constrs_1/imports/constraints/Nexys-A7-100T-Master.xdc}}
+set_property used_in_implementation false [get_files {{Z:/University/Architettura Sistemi Digitali/VHDL/exercise/exe 12/exe 12.srcs/constrs_1/imports/constraints/Nexys-A7-100T-Master.xdc}}]
+
 set_param ips.enableIPCacheLiteLoad 1
 
 read_checkpoint -auto_incremental -incremental {Z:/University/Architettura Sistemi Digitali/VHDL/exercise/exe 12/exe 12.srcs/utils_1/imports/synth_1/A.dcp}

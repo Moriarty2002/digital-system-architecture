@@ -33,7 +33,7 @@ begin
                     when "0010000000000000" => data_out <= "00111010"; 
                     when "0100000000000000" => data_out <= "00111111"; 
                     when "1000000000000000" => data_out <= "00111000"; 
-                    when others => data_out <= "00000000";  
+                    when others => data_out <= "00000000"; 
                 end case;
             end if;
         end if;

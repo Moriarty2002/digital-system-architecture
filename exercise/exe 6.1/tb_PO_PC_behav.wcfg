@@ -11,21 +11,17 @@
    </db_ref_list>
    <zoom_setting>
       <ZoomStartTime time="0.000 ns"></ZoomStartTime>
-      <ZoomEndTime time="698.673 ns"></ZoomEndTime>
-      <Cursor1Time time="164.715 ns"></Cursor1Time>
+      <ZoomEndTime time="1,000.001 ns"></ZoomEndTime>
+      <Cursor1Time time="274.455 ns"></Cursor1Time>
    </zoom_setting>
    <column_width_setting>
-      <NameColumnWidth column_width="160"></NameColumnWidth>
+      <NameColumnWidth column_width="155"></NameColumnWidth>
       <ValueColumnWidth column_width="72"></ValueColumnWidth>
    </column_width_setting>
-   <WVObjectSize size="15" />
+   <WVObjectSize size="6" />
    <wvobject fp_name="/tb_PO_PC/CLK_tb" type="logic">
       <obj_property name="ElementShortName">CLK_tb</obj_property>
       <obj_property name="ObjectShortName">CLK_tb</obj_property>
-   </wvobject>
-   <wvobject fp_name="/tb_PO_PC/RST_tb" type="logic">
-      <obj_property name="ElementShortName">RST_tb</obj_property>
-      <obj_property name="ObjectShortName">RST_tb</obj_property>
    </wvobject>
    <wvobject fp_name="/tb_PO_PC/STR_tb" type="logic">
       <obj_property name="ElementShortName">STR_tb</obj_property>
@@ -54,37 +50,5 @@
       <obj_property name="label">M OUT</obj_property>
       <obj_property name="CustomSignalColor">#FF00FF</obj_property>
       <obj_property name="UseCustomSignalColor">true</obj_property>
-   </wvobject>
-   <wvobject fp_name="/tb_PO_PC/uut/counter/CLK" type="logic">
-      <obj_property name="ElementShortName">CLK</obj_property>
-      <obj_property name="ObjectShortName">CLK</obj_property>
-   </wvobject>
-   <wvobject fp_name="/tb_PO_PC/uut/counter/enable" type="logic">
-      <obj_property name="ElementShortName">enable</obj_property>
-      <obj_property name="ObjectShortName">enable</obj_property>
-   </wvobject>
-   <wvobject fp_name="/tb_PO_PC/uut/counter/RST" type="logic">
-      <obj_property name="ElementShortName">RST</obj_property>
-      <obj_property name="ObjectShortName">RST</obj_property>
-   </wvobject>
-   <wvobject fp_name="/tb_PO_PC/uut/counter/max_reached" type="logic">
-      <obj_property name="ElementShortName">max_reached</obj_property>
-      <obj_property name="ObjectShortName">max_reached</obj_property>
-   </wvobject>
-   <wvobject fp_name="/tb_PO_PC/uut/counter/count" type="array">
-      <obj_property name="ElementShortName">count[3:0]</obj_property>
-      <obj_property name="ObjectShortName">count[3:0]</obj_property>
-   </wvobject>
-   <wvobject fp_name="/tb_PO_PC/uut/counter/counter_value" type="array">
-      <obj_property name="ElementShortName">counter_value[3:0]</obj_property>
-      <obj_property name="ObjectShortName">counter_value[3:0]</obj_property>
-   </wvobject>
-   <wvobject fp_name="/tb_PO_PC/uut/counter/N" type="other">
-      <obj_property name="ElementShortName">N</obj_property>
-      <obj_property name="ObjectShortName">N</obj_property>
-   </wvobject>
-   <wvobject fp_name="/tb_PO_PC/uut/counter/max_value" type="array">
-      <obj_property name="ElementShortName">max_value[3:0]</obj_property>
-      <obj_property name="ObjectShortName">max_value[3:0]</obj_property>
    </wvobject>
 </wave_config>

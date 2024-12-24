@@ -1,7 +1,7 @@
 Vivado Simulator v2023.1
 Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
 Copyright 2022-2023 Advanced Micro Devices, Inc. All Rights Reserved.
-Running: Z:/Programs/Xilinx/Vivado/2023.1/bin/unwrapped/win64.o/xelab.exe --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot tb_A_B_behav xil_defaultlib.tb_A_B -log elaborate.log 
+Running: Z:/Programs/Xilinx/Vivado/2023.1/bin/unwrapped/win64.o/xelab.exe --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot tb_A_B_CLK_behav xil_defaultlib.tb_A_B_CLK -log elaborate.log 
 Using 2 slave threads.
 Starting static elaboration
 Completed static elaboration
@@ -22,5 +22,5 @@ Compiling architecture behavioral of entity xil_defaultlib.MEM [\MEM(n=1,m=4)\]
 Compiling architecture behavioral of entity xil_defaultlib.Adder_Carry_Look_Ahead [adder_carry_look_ahead_default]
 Compiling architecture structural of entity xil_defaultlib.B [b_default]
 Compiling architecture behavioral of entity xil_defaultlib.A_B [a_b_default]
-Compiling architecture behavior of entity xil_defaultlib.tb_a_b
-Built simulation snapshot tb_A_B_behav
+Compiling architecture behavior of entity xil_defaultlib.tb_a_b_clk
+Built simulation snapshot tb_A_B_CLK_behav

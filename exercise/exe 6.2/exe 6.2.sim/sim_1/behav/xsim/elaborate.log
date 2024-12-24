@@ -21,5 +21,7 @@ Compiling architecture behavioral of entity xil_defaultlib.m_trasformation [m_tr
 Compiling architecture architectural of entity xil_defaultlib.m_system [m_system_default]
 Compiling architecture behavioral of entity xil_defaultlib.MEM [\MEM(n=16,m=4)\]
 Compiling architecture structural of entity xil_defaultlib.PO_PC [po_pc_default]
+Compiling architecture behavioral of entity xil_defaultlib.ButtonDebouncer [\ButtonDebouncer(btn_noise_time=...]
+Compiling architecture behavioral of entity xil_defaultlib.Controlled_PO_PC [controlled_po_pc_default]
 Compiling architecture testbench of entity xil_defaultlib.tb_po_pc
 Built simulation snapshot tb_PO_PC_behav

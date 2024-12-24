@@ -3,9 +3,11 @@ use IEEE.STD_LOGIC_1164.ALL;
 use work.all;
 
 entity A_B is
-    Port ( CLK : in STD_LOGIC;
+    Port ( CLK_A : in STD_LOGIC;
+           CLK_B : in STD_LOGIC;
            RST : in STD_LOGIC;
-           START : in STD_LOGIC);
+           START : in STD_LOGIC;
+           SUM: out STD_LOGIC_VECTOR(3 downto 0));
 end A_B;
 
 architecture Behavioral of A_B is
@@ -20,7 +22,7 @@ begin
 
     A: entity work.A 
     port map ( 
-       CLK => CLK,
+       CLK => CLK_A,
        RST => RST,
        START => START,
        REQ => s_REQ,
@@ -30,11 +32,12 @@ begin
     
     B: entity work.B
     port map ( 
-       CLK => CLK,
+       CLK => CLK_B,
        RST => RST,
        REQ => s_REQ,
        ACK => s_ACK,
-       D => s_D
+       D => s_D,
+       R_out => SUM
     );
 
 

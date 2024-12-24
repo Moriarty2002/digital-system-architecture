@@ -1,57 +1,36 @@
-library ieee;
-use ieee.std_logic_1164.all;
+library IEEE;
+use IEEE.STD_LOGIC_1164.ALL;
 
 entity decoder_4_16 is
-	port (
-		w      : in std_logic_vector(3 downto 0); -- 4-bit input
-		enable : in std_logic;
-		y      : out std_logic_vector(0 to 15) -- 16 output lines
-	);
+    Port ( input : in  STD_LOGIC_VECTOR(3 downto 0);
+           output : out  STD_LOGIC_VECTOR(15 downto 0));
 end decoder_4_16;
 
-architecture behavior of decoder_4_16 is
-	signal y_high : std_logic_vector(0 to 3); -- Output of the high 2-to-4 decoder
-	-- signal y_low  : std_logic_vector(0 to 3); -- Signals for low bits decoders
+architecture Behavioral of decoder_4_16 is
 begin
-	-- First 2-to-4 decoder for higher 2 bits (w(3 downto 2))
-	dec_high: entity work.decoder_2_4
-		port map(
-			w      => w(3 downto 2),
-			enable => enable,
-			y      => y_high
-		);
-
-	-- Second level: 4 instances of the 2-to-4 decoders for lower 2 bits (w(1 downto 0))
-	dec_low0: entity work.decoder_2_4
-		port map(
-			w      => w(1 downto 0),
-			enable => y_high(0),
-			y      => y(0 to 3)
-		);
---	y(0 to 3) <= y_low when y_high(0) = '1' else (others => '0');
-
-	dec_low1: entity work.decoder_2_4
-		port map(
-			w      => w(1 downto 0),
-			enable => y_high(1),
-			y      => y(4 to 7)
-		);
---	y(4 to 7) <= y_low when y_high(1) = '1' else (others => '0');
-
-	dec_low2: entity work.decoder_2_4
-		port map(
-			w      => w(1 downto 0),
-			enable => y_high(2),
-			y      => y(8 to 11)
-		);
---	y(8 to 11) <= y_low when y_high(2) = '1' else (others => '0');
-
-	dec_low3: entity work.decoder_2_4
-		port map(
-			w      => w(1 downto 0),
-			enable => y_high(3),
-			y      => y(12 to 15)
-		);
---	y(12 to 15) <= y_low when y_high(3) = '1' else (others => '0');
-
-end behavior;
+    process(input)
+    begin
+        -- Default output is all 0s
+        output <= (others => '0');
+        -- Enable one-hot encoding for the selected output line
+        case input is
+            when "0000" => output(0) <= '1';
+            when "0001" => output(1) <= '1';
+            when "0010" => output(2) <= '1';
+            when "0011" => output(3) <= '1';
+            when "0100" => output(4) <= '1';
+            when "0101" => output(5) <= '1';
+            when "0110" => output(6) <= '1';
+            when "0111" => output(7) <= '1';
+            when "1000" => output(8) <= '1';
+            when "1001" => output(9) <= '1';
+            when "1010" => output(10) <= '1';
+            when "1011" => output(11) <= '1';
+            when "1100" => output(12) <= '1';
+            when "1101" => output(13) <= '1';
+            when "1110" => output(14) <= '1';
+            when "1111" => output(15) <= '1';
+            when others => output <= (others => '0');
+        end case;
+    end process;
+end Behavioral;
